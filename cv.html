@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sushmitha Ravi — CV</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+/* Teal palette — matches the portfolio site's accent (assets/site.css --cyan). */
+:root{
+  --ink:#082521; --ink-2:#154440; --dim:#3d6d68; --faint:#6a9490;
+  --accent:#0b7d6c; --accent-2:#12a894; --accent-3:#2ee6c8;
+  --line:#d9ecea; --line-2:#c2ddda; --track:#e3f1ef;
+  --panel:#f4fbfa; --paper:#ffffff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#e9f3f1;color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:10.4px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.dh{font-family:'Space Grotesk',Inter,sans-serif;font-weight:700;letter-spacing:-.01em}
+a{color:var(--accent);text-decoration:none}
+
+/* toolbar (screen only) */
+.bar{max-width:820px;margin:18px auto 10px;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 8px}
+.bar .hint{color:#4f6b68;font-size:11px}
+.bar button{font-family:'Space Grotesk';font-weight:500;font-size:12px;background:var(--accent);color:#fff;border:none;border-radius:8px;padding:9px 16px;cursor:pointer}
+.bar button:hover{background:var(--accent-2)}
+.bar a.back{font-size:12px;color:#2d514d}
+
+.page{max-width:820px;margin:0 auto 40px;background:var(--paper);
+  box-shadow:0 18px 50px -24px rgba(12,50,48,.4);overflow:hidden}
+
+/* ── header band: gradient, initials medallion, name + lede ── */
+.head{position:relative;display:grid;grid-template-columns:31% 69%;
+  background:linear-gradient(115deg,var(--accent) 0%,var(--accent-2) 52%,var(--accent-3) 100%);
+  color:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.head-l{position:relative;padding:22px 22px 26px;display:flex;align-items:center;justify-content:center}
+/* the medallion sits in a white "speech-bubble" plate, like the reference */
+/* white plate behind the medallion, tapering into the gradient like the reference */
+.plate{position:absolute;inset:0;background:var(--paper);
+  -webkit-print-color-adjust:exact;print-color-adjust:exact;
+  clip-path:polygon(0 0,100% 0,100% 78%,66% 78%,52% 100%,0 100%)}
+.medal{position:relative;z-index:2;width:104px;height:104px;border-radius:50%;
+  background:linear-gradient(140deg,var(--accent) 0%,var(--accent-3) 100%);
+  border:4px solid #fff;box-shadow:0 6px 18px -6px rgba(12,50,48,.5);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Space Grotesk';font-weight:700;font-size:34px;color:#fff;letter-spacing:.02em;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.head-r{padding:26px 26px 24px 4px}
+.head-r h1{font-size:29px;line-height:1.02;text-transform:uppercase;letter-spacing:.005em}
+.head-r .role{font-family:ui-monospace,monospace;font-size:9.4px;letter-spacing:.2em;text-transform:uppercase;
+  margin-top:9px;padding-bottom:9px;border-bottom:1px solid rgba(255,255,255,.34);color:#e6fff9}
+.head-r .lede{font-size:9.7px;line-height:1.6;margin-top:9px;color:#f2fffb}
+.head-r .lede b{color:#fff;font-weight:600}
+
+.cols{display:grid;grid-template-columns:31% 69%;min-height:820px}
+
+/* ── sidebar ── */
+.side{background:var(--panel);border-right:1px solid var(--line);padding:6px 22px 26px;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+/* pill section headings, like the reference */
+.pill{display:block;text-align:center;background:linear-gradient(100deg,var(--accent),var(--accent-2));
+  color:#fff;font-family:ui-monospace,monospace;font-weight:400;font-size:8.6px;letter-spacing:.17em;
+  text-transform:uppercase;padding:5px 10px;border-radius:999px;margin:18px 0 10px;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.side .pill:first-child{margin-top:16px}
+
+.contact-row{display:flex;flex-direction:column;gap:7px}
+.crow{display:flex;align-items:flex-start;gap:8px}
+.crow .ic{flex:none;width:15px;height:15px;border-radius:50%;background:var(--accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;margin-top:.5px;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.crow .ic svg{width:8.5px;height:8.5px;stroke:#fff;fill:none;stroke-width:2.4}
+.crow .v{font-size:9.3px;color:var(--ink-2);word-break:break-word;line-height:1.45}
+.crow .v .k{display:block;color:var(--faint);font-family:ui-monospace,monospace;font-size:7.4px;
+  letter-spacing:.1em;text-transform:uppercase;margin-bottom:1px}
+
+/* skill + language meters */
+.meter{margin-bottom:6px}
+.meter .ml{display:flex;justify-content:space-between;align-items:baseline;gap:6px;margin-bottom:2.5px}
+.meter .ml span{font-size:9.2px;color:var(--ink-2)}
+.meter .ml b{font-family:ui-monospace,monospace;font-weight:400;font-size:7.4px;color:var(--faint);
+  letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.track{height:5px;border-radius:999px;background:var(--track);overflow:hidden;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-3));
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+
+.about{font-size:9.2px;color:var(--ink-2);line-height:1.55;margin-bottom:7px}
+.about b{color:var(--ink);font-weight:600}
+.about:last-of-type{margin-bottom:0}
+
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chips span{font-size:8.4px;color:var(--ink-2);background:#fff;border:1px solid var(--line-2);
+  border-radius:5px;padding:2px 6px;line-height:1.3}
+
+/* ── main ── */
+.body{padding:16px 26px 30px}
+.sec{margin-top:16px}
+.sec:first-child{margin-top:6px}
+.sec > h2{font-size:11.6px;letter-spacing:.02em;color:var(--ink);text-transform:uppercase;
+  display:flex;align-items:center;gap:9px;margin-bottom:11px}
+.sec > h2 .badge{flex:none;width:19px;height:19px;border-radius:50%;
+  background:linear-gradient(140deg,var(--accent),var(--accent-2));color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.sec > h2 .badge svg{width:10px;height:10px;stroke:#fff;fill:none;stroke-width:2.2}
+.sec > h2::after{content:"";flex:1;height:1px;background:var(--line-2)}
+
+/* timeline entries with dot + connector, like the reference */
+.tl{position:relative;padding-left:15px}
+.tl::before{content:"";position:absolute;left:3.5px;top:4px;bottom:6px;width:1px;
+  background:repeating-linear-gradient(180deg,var(--line-2) 0 3px,transparent 3px 6px)}
+.entry{position:relative;margin-bottom:12px;page-break-inside:avoid}
+.entry::before{content:"";position:absolute;left:-15px;top:3.5px;width:8px;height:8px;border-radius:50%;
+  background:var(--accent);box-shadow:0 0 0 2.5px var(--paper);
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.entry:last-child{margin-bottom:0}
+.entry .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.entry h4{font-size:11.2px;color:var(--ink)}
+.entry .when{font-family:ui-monospace,monospace;font-size:8.4px;color:var(--accent);letter-spacing:.06em;white-space:nowrap}
+.entry .where{font-size:9.4px;color:var(--dim);margin-top:1px}
+.entry .tag{font-size:8.4px;color:var(--accent);font-family:ui-monospace,monospace;margin-top:1.5px}
+.entry p{font-size:9.6px;color:var(--ink-2);margin-top:4px;line-height:1.5}
+.entry ul{margin:4px 0 0 0;list-style:none;display:flex;flex-direction:column;gap:3px}
+.entry ul li{position:relative;padding-left:11px;font-size:9.4px;color:var(--ink-2);line-height:1.45}
+.entry ul li::before{content:"▸";position:absolute;left:0;color:var(--accent);font-size:8.5px;top:.5px}
+.entry ul li b{color:var(--ink);font-weight:600}
+.entry .tools{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+.entry .tools span{font-family:ui-monospace,monospace;font-size:7.8px;color:var(--dim);
+  border:1px solid var(--line-2);border-radius:4px;padding:1px 5px}
+
+/* grouped company: two roles nested under one firm (LinkedIn-style) */
+.entry.group .sub{position:relative;margin-top:6px;padding-left:14px}
+.entry.group .sub::before{content:"";position:absolute;left:2.5px;top:5px;bottom:4px;width:1px;background:var(--line-2)}
+.role-row{position:relative;margin-bottom:7px}
+.role-row:last-child{margin-bottom:0}
+.role-row::before{content:"";position:absolute;left:-14px;top:4px;width:6px;height:6px;border-radius:50%;
+  background:var(--paper);border:1.5px solid var(--accent-2);
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.role-row h5{font-family:'Space Grotesk',Inter,sans-serif;font-weight:600;font-size:10.2px;color:var(--ink)}
+
+/* skills + software, side by side like the reference */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:0 22px}
+.two-col h3{display:flex;align-items:center;gap:7px;font-size:10.4px;text-transform:uppercase;
+  color:var(--ink);letter-spacing:.02em;margin-bottom:8px}
+.two-col h3 .badge{flex:none;width:17px;height:17px;border-radius:50%;
+  background:linear-gradient(140deg,var(--accent),var(--accent-2));color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+.two-col h3 .badge svg{width:9px;height:9px;stroke:#fff;fill:none;stroke-width:2.2}
+
+/* Fits ONE A4 page. If you add entries later and it spills to page 2, drop
+   .page zoom a step (.98 → .94 → .90). */
+@media print{
+  @page{size:A4;margin:0}
+  html,body{background:#fff;font-size:9.6px;line-height:1.45}
+  .bar{display:none}
+  .page{box-shadow:none;margin:0;max-width:none;zoom:.98}
+  a{color:var(--ink-2)}
+  .cols{min-height:0}
+  .head-l{padding:16px 18px 20px}
+  .head-r{padding:20px 22px 18px 4px}
+  .head-r h1{font-size:26px}
+  .head-r .role{margin-top:7px;padding-bottom:7px}
+  .head-r .lede{margin-top:7px;line-height:1.5}
+  .medal{width:88px;height:88px;font-size:29px;border-width:3px}
+  .side{padding:4px 15px 14px}
+  .body{padding:11px 18px 14px}
+  .sec{margin-top:9px}
+  .sec > h2{margin-bottom:6px}
+  .entry{margin-bottom:7px}
+  .entry ul{gap:1.5px}
+  .entry ul li{line-height:1.32}
+  .entry p{margin-top:2.5px}
+  .entry .tools{margin-top:3.5px}
+  .pill{margin:10px 0 6px;padding:4px 10px}
+  .meter{margin-bottom:3.5px}
+  .track{height:4px}
+  .contact-row{gap:5px}
+}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <a class="back" href="index.html">← Back to portfolio</a>
+  <span class="hint">Tip: click Download, then choose “Save as PDF” as the printer.</span>
+  <button onclick="window.print()">⬇ Download PDF</button>
+</div>
+
+<div class="page">
+
+  <!-- ===== HEADER BAND ===== -->
+  <header class="head">
+    <div class="head-l">
+      <div class="plate"></div>
+      <div class="medal">SR</div>
+    </div>
+    <div class="head-r">
+      <h1>Sushmitha Ravi</h1>
+      <div class="role">Architect &amp; Computational Designer</div>
+      <p class="lede">Architect with <b>2+ years of practice</b> across India and Kuwait, now designing at the intersection of <b>architecture, BIM, machine learning, parametric and computational design</b> — from GFC drawings and façade detailing to generative systems, KPI-driven BIM pipelines and AI design agents.</p>
+    </div>
+  </header>
+
+  <div class="cols">
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="side">
+
+      <div class="pill">About Me</div>
+      <p class="about"><b>Architect and computational designer</b> working at the intersection of architecture, BIM and machine learning. I build the tools that design buildings — parametric systems, KPI-driven BIM pipelines, and AI agents that read a site, generate massing and explain every decision.</p>
+      <p class="about">My practice spans both ends: detailed construction documentation for built commercial, residential and façade projects, and computational research at IAAC Barcelona — generative design, graph ML and environmental optimisation. From design intent to intelligent architecture.</p>
+
+      <div class="pill">Contact</div>
+      <div class="contact-row">
+        <div class="crow">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span class="v"><span class="k">Email</span><a href="mailto:ar.sushmitha28@gmail.com">ar.sushmitha28@gmail.com</a></span>
+        </div>
+        <div class="crow">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.4 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg></span>
+          <span class="v"><span class="k">Phone</span>+91 91486 20027</span>
+        </div>
+        <div class="crow">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span class="v"><span class="k">Location</span>Bengaluru, India · Barcelona, Spain</span>
+        </div>
+        <div class="crow">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4a2 2 0 0 1 4 0v4"/></svg></span>
+          <span class="v"><span class="k">LinkedIn</span><a href="https://www.linkedin.com/in/arsushmitharavi">linkedin.com/in/arsushmitharavi</a></span>
+        </div>
+        <div class="crow">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span>
+          <span class="v"><span class="k">Portfolio</span>[ add your site / Behance ]</span>
+        </div>
+      </div>
+
+      <div class="pill">Languages</div>
+      <div class="meter"><div class="ml"><span>Kannada</span><b>Native</b></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+      <div class="meter"><div class="ml"><span>English</span><b>Professional</b></div><div class="track"><div class="fill" style="width:92%"></div></div></div>
+      <div class="meter"><div class="ml"><span>Hindi</span><b>Fluent</b></div><div class="track"><div class="fill" style="width:78%"></div></div></div>
+      <div class="meter"><div class="ml"><span>Tamil</span><b>Fluent</b></div><div class="track"><div class="fill" style="width:78%"></div></div></div>
+      <div class="meter"><div class="ml"><span>Telugu</span><b>Conversational</b></div><div class="track"><div class="fill" style="width:62%"></div></div></div>
+      <div class="meter"><div class="ml"><span>Malayalam</span><b>Conversational</b></div><div class="track"><div class="fill" style="width:62%"></div></div></div>
+
+      <div class="pill">Toolkit</div>
+      <div class="chips"><span>Monoceros WFC</span><span>Galapagos</span><span>Crystallon</span><span>Alpaca4D</span><span>TopologicPy</span><span>Rhino.Inside.Revit</span><span>IFC</span><span>scikit-learn</span><span>Keras/TF</span><span>PyTorch Geometric</span><span>GraphSAGE</span><span>SHAP</span><span>LangGraph</span><span>FastAPI</span><span>Vue/JS</span><span>Hailuo AI</span><span>Affinity</span><span>Canva</span><span>MS Office</span></div>
+
+      <div class="pill">Focus Areas</div>
+      <div class="chips"><span>Generative Design</span><span>BIM Automation</span><span>Machine Learning</span><span>Graph ML</span><span>Environmental Analysis</span><span>Structural Optimization</span><span>AI Design Agents</span></div>
+    </aside>
+
+    <!-- ===== MAIN ===== -->
+    <main class="body">
+
+      <div class="sec">
+        <h2><span class="badge"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>Work Experience</h2>
+        <div class="tl">
+
+          <div class="entry">
+            <div class="top"><h4>Freelance</h4><span class="when">May 2026 — Present</span></div>
+            <div class="where">Architect</div>
+            <p>Independent architectural commissions — <b>residential projects delivered in BIM</b>, from design development through documentation and visualisation.</p>
+          </div>
+
+          <div class="entry">
+            <div class="top"><h4>BonyanGroup</h4><span class="when">Oct 2025 — May 2026</span></div>
+            <div class="where">Architect · Kuwait · Full-time · Hybrid</div>
+            <p><b>BIM and Revit-based delivery on residential projects</b> — modelling, documentation and coordination, working hybrid from Barcelona alongside the MaCAD master’s programme.</p>
+          </div>
+
+          <!-- grouped like LinkedIn: one firm, two roles (promoted from intern) -->
+          <div class="entry group">
+            <div class="top"><h4>Zentangle Architects</h4><span class="when">Jan 2024 — Jul 2025 · 1 yr 7 mos</span></div>
+            <div class="where">Bengaluru, India</div>
+            <div class="sub">
+              <div class="role-row">
+                <div class="top"><h5>Junior Architect</h5><span class="when">Apr 2024 — Jul 2025 · Full-time</span></div>
+                <ul>
+                  <li>Produced <b>GFC plans and working drawings</b> for commercial, residential and pre-school projects — staircase, curtain-wall and finish details, opening schedules.</li>
+                  <li>Developed <b>façade design and detailing</b> from concept through construction documentation.</li>
+                </ul>
+              </div>
+              <div class="role-row">
+                <div class="top"><h5>Intern</h5><span class="when">Jan 2024 — Mar 2024</span></div>
+                <ul>
+                  <li>Supported design development, drafting and interior packages across live projects.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h2><span class="badge"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg></span>Education</h2>
+        <div class="tl">
+          <div class="entry">
+            <div class="top"><h4>Master in Advanced Computation for Architecture &amp; Design (MaCAD)</h4><span class="when">2025 — 2026</span></div>
+            <div class="where">IAAC — Institute for Advanced Architecture of Catalonia · Barcelona, Spain</div>
+            <p>Computational design, BIM &amp; SDG, machine learning &amp; graph ML, generative AI, structural &amp; environmental optimisation, and collaborative digital workflows.</p>
+          </div>
+          <div class="entry">
+            <div class="top"><h4>Bachelor of Architecture (B.Arch)</h4><span class="when">2019 — 2024</span></div>
+            <div class="where">India · Five-year professional degree</div>
+            <p>Design studios, building technology, structures, history &amp; theory, and professional practice.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec">
+        <div class="two-col">
+          <div>
+            <h3><span class="badge"><svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/></svg></span>Skills</h3>
+            <div class="meter"><div class="ml"><span>Parametric &amp; Generative</span><b>Advanced</b></div><div class="track"><div class="fill" style="width:94%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Computational Design</span><b>Advanced</b></div><div class="track"><div class="fill" style="width:92%"></div></div></div>
+            <div class="meter"><div class="ml"><span>BIM &amp; Interoperability</span><b>Advanced</b></div><div class="track"><div class="fill" style="width:88%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Construction Documentation</span><b>Advanced</b></div><div class="track"><div class="fill" style="width:90%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Façade Design &amp; Detailing</span><b>Advanced</b></div><div class="track"><div class="fill" style="width:86%"></div></div></div>
+            <div class="meter"><div class="ml"><span>3D Modelling &amp; Visualisation</span><b>Advanced</b></div><div class="track"><div class="fill" style="width:90%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Machine Learning</span><b>Proficient</b></div><div class="track"><div class="fill" style="width:82%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Environmental Analysis</span><b>Proficient</b></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Structural Optimisation</span><b>Proficient</b></div><div class="track"><div class="fill" style="width:76%"></div></div></div>
+          </div>
+          <div>
+            <h3><span class="badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>Software</h3>
+            <div class="meter"><div class="ml"><span>Rhino + Grasshopper</span><b>Advanced</b></div><div class="track"><div class="fill" style="width:95%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Revit</span><b>Advanced</b></div><div class="track"><div class="fill" style="width:88%"></div></div></div>
+            <div class="meter"><div class="ml"><span>AutoCAD</span><b>Advanced</b></div><div class="track"><div class="fill" style="width:90%"></div></div></div>
+            <div class="meter"><div class="ml"><span>SketchUp</span><b>Advanced</b></div><div class="track"><div class="fill" style="width:86%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Lumion / Enscape</span><b>Advanced</b></div><div class="track"><div class="fill" style="width:88%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Twinmotion</span><b>Advanced</b></div><div class="track"><div class="fill" style="width:84%"></div></div></div>
+            <div class="meter"><div class="ml"><span>V-Ray</span><b>Proficient</b></div><div class="track"><div class="fill" style="width:78%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Python</span><b>Proficient</b></div><div class="track"><div class="fill" style="width:84%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Speckle</span><b>Proficient</b></div><div class="track"><div class="fill" style="width:82%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Ladybug + Honeybee</span><b>Proficient</b></div><div class="track"><div class="fill" style="width:80%"></div></div></div>
+            <div class="meter"><div class="ml"><span>Photoshop / Illustrator / InDesign</span><b>Proficient</b></div><div class="track"><div class="fill" style="width:82%"></div></div></div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

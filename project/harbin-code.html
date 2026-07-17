@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Harbin Code — Sushmitha Ravi</title>
+<meta name="description" content="A rule-based generative housing system for sub-arctic Harbin, built with the &lt;b&gt;Monoceros Wave-Function-Collapse plugin inside Grasshopper&lt;/b&gt; — one rule-set, many climate-responsive buildings.">
+<link rel="stylesheet" href="../assets/fonts.css">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body class="detail">
+<aside class="rail">
+  <div>
+    <a class="brand" href="../index.html">Sushmitha<br>Ravi<small>Architect &amp; Computational Designer</small></a>
+    <nav id="nav"><a href="../index.html"><span class="idx">←</span> Home</a>
+<a href="../section/bachelors.html"><span class="idx">01</span> Bachelor’s Work</a>
+<a href="../section/professional.html"><span class="idx">02</span> Professional Work</a>
+<a href="../section/masters.html"><span class="idx">03</span> Master’s Work</a>
+<a href="../section/freelance.html"><span class="idx">04</span> Freelance</a>
+<a href="../index.html#contact"><span class="idx">✎</span> Contact</a></nav>
+  </div>
+  <div>
+    <a class="rail-cv" href="../cv.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></svg><span>Curriculum Vitae</span></a>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle colour theme">◐ Theme</button>
+    <div class="foot">B.Arch · MaCAD IAAC<br>Bengaluru · Barcelona</div>
+  </div>
+</aside>
+<header class="topbar">
+  <a class="brand" href="../index.html">Sushmitha Ravi<small>Architect &amp; Computational Designer</small></a>
+  <div class="tb-actions">
+    <button class="theme-btn" id="themeBtnM" aria-label="Toggle colour theme">◐</button>
+    <a class="tb-link" href="../cv.html">CV</a>
+  </div>
+</header>
+<div class="main">
+  <article class="proj">
+    <div class="proj-hero">
+      <img src="../assets/web/harbin-code/cover-snow-tower.jpg" alt="The Harbin Code — cover" fetchpriority="high" decoding="async">
+      
+      <div class="proj-hero-grad"></div>
+      <div class="wrap proj-hero-inner">
+        <a class="crumb" href="../section/masters.html"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Master’s Work</a>
+        <div class="proj-tagline"><span class="pid">03.08</span> Parametric Housing</div>
+        <h1>The Harbin Code</h1>
+        <div class="proj-venue">MaCAD · IAAC — ACESD Studio · 2025 · Team of 2</div>
+        <span class="role">◆ Parametric system &amp; climate strategy</span>
+        <button class="vo-btn" id="voBtn" data-narration="The Harbin Code. Parametric Housing. A rule-based generative housing system for sub-arctic Harbin, built with the Monoceros Wave-Function-Collapse plugin inside Grasshopper, one rule-set, many climate-responsive buildings. One rule-set,, many buildings. The Harbin Code is a rule-based generative housing system for sub-arctic Harbin, driven entirely by the Monoceros Wave-Function-Collapse (WFC) plugin running inside Grasshopper. Four principles guide it: a modular housing logic (a 14 by 7 m system combining 2, 3 and 4-BHK units through controlled stacking), a tower + courtyard topology (courtyard clusters as spatial buffers that break cold winds and capture low winter sun), a climate-responsive envelope (a compact masonry shell with layered façades and thermal cores), and a rule-based parametric system that governs massing, courtyard placement, façade depth and roof logic in one repeatable generative framework. Climate data grounds every rule, Harbin's annual temperature swings and dominant wind directions set the orientation, envelope depth and courtyard strategy. Site → core →, podium → aggregation. A given Harbin site is aligned to its climatic and urban constraints. Vertical cores are placed for solar orientation, wind protection and circulation efficiency; a shared podium gathers amenities and collective open space; then residential units aggregate through percentage-based logic for 2, 3 and 4-bedroom types, allowing iterative variation from a single rule-set. Topological, map. Floor-wise iterations open a southern quadrant on the first module to tap maximum southern sunlight, mapping how the 2/3/4-bed units, circulation, landscape and cores distribute across scenarios. Module, definition. A vocabulary of corner and typical modules, single and double 2-bed, 3-bed and 4-bed, forms the alphabet the solver aggregates. Each module is a resolved unit plan with its own service, circulation and glazing logic. Core &amp;, courtyard strategy. Sections through the core reveal a light well and thermal-chimney effect, with alternating-floor double-height spaces. Courtyards act as communal &quot;hearths&quot;, buffering wind, trapping heat, and bringing daylight deep into the plan. Generated with, Monoceros WFC. The entire building is generated by a Grasshopper definition using the Monoceros Wave-Function-Collapse solver. From a site boundary, the workflow builds a grid, a building-line curve and centroid, translates it along Z, and allocates program slots, circulation, and north/south/east/west/central unit slots. Modules are deconstructed into a bounding box, base and centre points; explicit rules (typed rules at points, rules at boundaries) tell the solver how modules may connect; then the Monoceros WFC solver collapses the field into a valid configuration and materialises the final module aggregation. The solver runs until every slot resolves into a legal, connected building, the final materialised model below. 3D view, &amp; data. A functional-area breakdown reads roughly 55% two-bed, 17% three-bed and 7% four-bed units, with the remainder circulation and landscape, the mix the percentage-based rules target. Structure, brief. A reinforced-concrete modular shell aligns with the 7 by 14 m grid. Converging walls, 90 cm at the corners, 20 cm near glazing, thicken the edges for strength and thermal insulation against Harbin's sub-zero climate. The dense outer shell resists wind and retains heat while the modular core keeps the structure coherent and load paths uniform. Environmental, strategies. Incident-radiation and sky-matrix analysis drive the response: a wind-breaker massing, a sheltered southern courtyard, a thermal well, a snow-shedding slope and a heat trap. Glazing placed on alternating floors pushes daylight into the core circulation zones without losing envelope compactness. Typical, floor plans. Typical plans at the 5th, 10th, 15th and 20th floors show the unit mix shifting with height while the core, circulation and landscape hold constant, a high-LOD plan resolves the detail. Sections &amp;, elevations. Sections and elevations read the podium, circulation core, headroom and south courtyard across the tower, the compact, staggered form that answers the sub-arctic climate. One site,, many configurations. Because the building is generated, not drawn, varying the input parameters, number of floors, seeds and façade modules, produces multiple valid configurations on the same site, adapting density and form while keeping a consistent urban footprint and structural logic. One rule-set,, seven sites. The same Monoceros rule-set is re-run across seven different Harbin sites, each collapses into a distinct building tuned to its edges and prevailing winds, yet every one shares the same modular DNA. The unit mix (2, 3 and 4-bed, circulation and landscape) is shown per site below. Harbin,, rendered. Final Lumion renders, some AI-enhanced, place the towers back into Harbin's winter landscape: clustered and staggered to reduce exposed façade, break wind corridors and shelter the outdoor realm from snow. Built with the Monoceros Wave-Function-Collapse plugin inside Grasshopper. Percentage-driven mix of 2 / 3 / 4-bed units across 7 sites. One rule-set produces distinct climate-responsive buildings per site." aria-label="Play voice-over narration">
+        <span class="vo-ico" aria-hidden="true"></span><span class="vo-bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="vo-label">Listen</span></button>
+      </div>
+    </div>
+    
+    <div class="wrap proj-body">
+      
+      <div class="proj-grid">
+        <div class="proj-lead">
+          <p class="lead-line">A rule-based generative housing system for sub-arctic Harbin, built with the &lt;b&gt;Monoceros Wave-Function-Collapse plugin inside Grasshopper&lt;/b&gt; — one rule-set, many climate-responsive buildings.</p>
+          
+          <ul class="highlights"><li>Built with the Monoceros Wave-Function-Collapse plugin inside Grasshopper</li><li>Percentage-driven mix of 2 / 3 / 4-bed units across 7 sites</li><li>One rule-set produces distinct climate-responsive buildings per site</li></ul>
+          <div class="tools"><span class="t key">Grasshopper</span><span class="t key">Monoceros WFC</span><span class="t">Rhino</span><span class="t">Lumion + AI</span><span class="t">Climate analysis</span></div>
+        </div>
+        <aside class="proj-side"><div class="metrics-v"><div class="metric"><div class="m-n">14×7m</div><div class="m-l">Structural module grid</div></div><div class="metric"><div class="m-n">5</div><div class="m-l">Module typologies</div></div><div class="metric"><div class="m-n">7</div><div class="m-l">Sites from one rule-set</div></div><div class="metric"><div class="m-n">20+</div><div class="m-l">Floors of aggregation</div></div></div></aside>
+      </div>
+      
+      
+      <div class="post-article"><div class="post-eyebrow">Building recipe</div>
+<h2 class="post-h">One rule-set, <span class="post-h-ac">many buildings</span></h2>
+<p class="post-p">The Harbin Code is a rule-based generative housing system for sub-arctic Harbin, driven entirely by the <b>Monoceros Wave-Function-Collapse (WFC) plugin running inside Grasshopper</b>. Four principles guide it: a <b>modular housing logic</b> (a 14 × 7 m system combining 2, 3 and 4-BHK units through controlled stacking), a <b>tower + courtyard topology</b> (courtyard clusters as spatial buffers that break cold winds and capture low winter sun), a <b>climate-responsive envelope</b> (a compact masonry shell with layered façades and thermal cores), and a <b>rule-based parametric system</b> that governs massing, courtyard placement, façade depth and roof logic in one repeatable generative framework.</p>
+<div class="post-media row cols-2"><figure class="post-fig" data-full="../assets/web/harbin-code/recipe-unit-logic.jpg" data-idx="0" tabindex="0"><img src="../assets/web/harbin-code/recipe-unit-logic.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/recipe-wfc-tiles.jpg" data-idx="1" tabindex="0"><img src="../assets/web/harbin-code/recipe-wfc-tiles.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<p class="post-p">Climate data grounds every rule — Harbin's annual temperature swings and dominant wind directions set the orientation, envelope depth and courtyard strategy.</p>
+<div class="post-media row cols-2"><figure class="post-fig" data-full="../assets/web/harbin-code/climate-temp.jpg" data-idx="2" tabindex="0"><img src="../assets/web/harbin-code/climate-temp.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/climate-windrose.jpg" data-idx="3" tabindex="0"><img src="../assets/web/harbin-code/climate-windrose.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<div class="post-eyebrow">Design strategy</div>
+<h2 class="post-h">Site → core → <span class="post-h-ac">podium → aggregation</span></h2>
+<p class="post-p">A given Harbin site is aligned to its climatic and urban constraints. <b>Vertical cores</b> are placed for solar orientation, wind protection and circulation efficiency; a shared <b>podium</b> gathers amenities and collective open space; then <b>residential units aggregate</b> through percentage-based logic for 2, 3 and 4-bedroom types — allowing iterative variation from a single rule-set.</p>
+<div class="post-media row cols-3"><figure class="post-fig" data-full="../assets/web/harbin-code/strategy-cores.jpg" data-idx="4" tabindex="0"><img src="../assets/web/harbin-code/strategy-cores.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/strategy-podium.jpg" data-idx="5" tabindex="0"><img src="../assets/web/harbin-code/strategy-podium.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/strategy-aggregation.jpg" data-idx="6" tabindex="0"><img src="../assets/web/harbin-code/strategy-aggregation.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<h2 class="post-h">Topological <span class="post-h-ac">map</span></h2>
+<p class="post-p">Floor-wise iterations open a southern quadrant on the first module to tap maximum southern sunlight, mapping how the 2/3/4-bed units, circulation, landscape and cores distribute across scenarios.</p>
+<div class="post-media one"><figure class="post-fig" data-full="../assets/web/harbin-code/topological-map.jpg" data-idx="7" tabindex="0"><img src="../assets/web/harbin-code/topological-map.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<h2 class="post-h">Module <span class="post-h-ac">definition</span></h2>
+<p class="post-p">A vocabulary of corner and typical modules — single and double 2-bed, 3-bed and 4-bed — forms the alphabet the solver aggregates. Each module is a resolved unit plan with its own service, circulation and glazing logic.</p>
+<div class="post-media row cols-3"><figure class="post-fig" data-full="../assets/web/harbin-code/module-3bed.jpg" data-idx="8" tabindex="0"><img src="../assets/web/harbin-code/module-3bed.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/module-2bed.jpg" data-idx="9" tabindex="0"><img src="../assets/web/harbin-code/module-2bed.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/module-4bed.jpg" data-idx="10" tabindex="0"><img src="../assets/web/harbin-code/module-4bed.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<h2 class="post-h">Core &amp; <span class="post-h-ac">courtyard strategy</span></h2>
+<p class="post-p">Sections through the core reveal a <b>light well</b> and <b>thermal-chimney effect</b>, with alternating-floor double-height spaces. Courtyards act as communal "hearths" — buffering wind, trapping heat, and bringing daylight deep into the plan.</p>
+<div class="post-media row cols-2"><figure class="post-fig" data-full="../assets/web/harbin-code/courtyard-section-1.jpg" data-idx="11" tabindex="0"><img src="../assets/web/harbin-code/courtyard-section-1.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/courtyard-section-2.jpg" data-idx="12" tabindex="0"><img src="../assets/web/harbin-code/courtyard-section-2.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<div class="post-eyebrow">Parametric workflow · Monoceros WFC in Grasshopper</div>
+<h2 class="post-h">Generated with <span class="post-h-ac">Monoceros WFC</span></h2>
+<p class="post-p">The entire building is generated by a <b>Grasshopper</b> definition using the <b>Monoceros Wave-Function-Collapse solver</b>. From a site boundary, the workflow builds a grid, a building-line curve and centroid, translates it along Z, and allocates program slots — circulation, and north/south/east/west/central unit slots. Modules are deconstructed into a bounding box, base and centre points; explicit rules (typed rules at points, rules at boundaries) tell the solver how modules may connect; then the <b>Monoceros WFC solver</b> collapses the field into a valid configuration and materialises the final module aggregation.</p>
+<div class="post-media row cols-3"><figure class="post-fig" data-full="../assets/web/harbin-code/wfc-1-site-grid.jpg" data-idx="13" tabindex="0"><img src="../assets/web/harbin-code/wfc-1-site-grid.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/wfc-2-building-line.jpg" data-idx="14" tabindex="0"><img src="../assets/web/harbin-code/wfc-2-building-line.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/wfc-3-grid-points.jpg" data-idx="15" tabindex="0"><img src="../assets/web/harbin-code/wfc-3-grid-points.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<div class="post-media row cols-3"><figure class="post-fig" data-full="../assets/web/harbin-code/wfc-4-z-translate.jpg" data-idx="16" tabindex="0"><img src="../assets/web/harbin-code/wfc-4-z-translate.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/wfc-5-slots.jpg" data-idx="17" tabindex="0"><img src="../assets/web/harbin-code/wfc-5-slots.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/wfc-6-solving.jpg" data-idx="18" tabindex="0"><img src="../assets/web/harbin-code/wfc-6-solving.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<p class="post-p">The solver runs until every slot resolves into a legal, connected building — the final materialised model below.</p>
+<div class="post-media one"><figure class="post-fig" data-full="../assets/web/harbin-code/wfc-7-final-model.jpg" data-idx="19" tabindex="0"><img src="../assets/web/harbin-code/wfc-7-final-model.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<div class="post-eyebrow">Structure</div>
+<h2 class="post-h">3D view <span class="post-h-ac">&amp; data</span></h2>
+<p class="post-p">A functional-area breakdown reads roughly 55% two-bed, 17% three-bed and 7% four-bed units, with the remainder circulation and landscape — the mix the percentage-based rules target.</p>
+<div class="post-media one"><figure class="post-fig" data-full="../assets/web/harbin-code/render-3d-data.jpg" data-idx="20" tabindex="0"><img src="../assets/web/harbin-code/render-3d-data.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<h2 class="post-h">Structure <span class="post-h-ac">brief</span></h2>
+<p class="post-p">A reinforced-concrete modular shell aligns with the 7 × 14 m grid. <b>Converging walls</b> — 90 cm at the corners, 20 cm near glazing — thicken the edges for strength and thermal insulation against Harbin's sub-zero climate. The dense outer shell resists wind and retains heat while the modular core keeps the structure coherent and load paths uniform.</p>
+<div class="post-media row cols-2"><figure class="post-fig" data-full="../assets/web/harbin-code/structure-massing.jpg" data-idx="21" tabindex="0"><img src="../assets/web/harbin-code/structure-massing.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/structure-module.jpg" data-idx="22" tabindex="0"><img src="../assets/web/harbin-code/structure-module.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<div class="post-eyebrow">Environment</div>
+<h2 class="post-h">Environmental <span class="post-h-ac">strategies</span></h2>
+<p class="post-p">Incident-radiation and sky-matrix analysis drive the response: a <b>wind-breaker</b> massing, a sheltered <b>southern courtyard</b>, a <b>thermal well</b>, a <b>snow-shedding slope</b> and a <b>heat trap</b>. Glazing placed on alternating floors pushes daylight into the core circulation zones without losing envelope compactness.</p>
+<div class="post-media one"><figure class="post-fig" data-full="../assets/web/harbin-code/env-strategies-slide.jpg" data-idx="23" tabindex="0"><img src="../assets/web/harbin-code/env-strategies-slide.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<div class="post-eyebrow">Plans, sections &amp; elevations</div>
+<h2 class="post-h">Typical <span class="post-h-ac">floor plans</span></h2>
+<p class="post-p">Typical plans at the 5th, 10th, 15th and 20th floors show the unit mix shifting with height while the core, circulation and landscape hold constant — a high-LOD plan resolves the detail.</p>
+<div class="post-media row cols-2"><figure class="post-fig" data-full="../assets/web/harbin-code/plan-5th.jpg" data-idx="24" tabindex="0"><img src="../assets/web/harbin-code/plan-5th.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/plan-15th.jpg" data-idx="25" tabindex="0"><img src="../assets/web/harbin-code/plan-15th.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<div class="post-media one"><figure class="post-fig" data-full="../assets/web/harbin-code/plan-highlod.jpg" data-idx="26" tabindex="0"><img src="../assets/web/harbin-code/plan-highlod.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<h2 class="post-h">Sections &amp; <span class="post-h-ac">elevations</span></h2>
+<p class="post-p">Sections and elevations read the podium, circulation core, headroom and south courtyard across the tower — the compact, staggered form that answers the sub-arctic climate.</p>
+<div class="post-media row cols-2"><figure class="post-fig" data-full="../assets/web/harbin-code/elevation-1.jpg" data-idx="27" tabindex="0"><img src="../assets/web/harbin-code/elevation-1.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/elevation-2.jpg" data-idx="28" tabindex="0"><img src="../assets/web/harbin-code/elevation-2.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<div class="post-eyebrow">Design variations</div>
+<h2 class="post-h">One site, <span class="post-h-ac">many configurations</span></h2>
+<p class="post-p">Because the building is generated, not drawn, varying the input parameters — number of floors, seeds and façade modules — produces multiple valid configurations on the same site, adapting density and form while keeping a consistent urban footprint and structural logic.</p>
+<div class="post-media row cols-2"><figure class="post-fig" data-full="../assets/web/harbin-code/var-onesite-1.gif" data-idx="29" tabindex="0"><img src="../assets/web/harbin-code/var-onesite-1.gif" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/var-onesite-2.gif" data-idx="30" tabindex="0"><img src="../assets/web/harbin-code/var-onesite-2.gif" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<h2 class="post-h">One rule-set, <span class="post-h-ac">seven sites</span></h2>
+<p class="post-p">The same Monoceros rule-set is re-run across seven different Harbin sites — each collapses into a distinct building tuned to its edges and prevailing winds, yet every one shares the same modular DNA. The unit mix (2, 3 and 4-bed, circulation and landscape) is shown per site below.</p>
+<div class="site-grid"><div class="site-card">
+      <figure class="post-fig" data-full="../assets/web/harbin-code/var-site-1.gif" data-idx="31" tabindex="0"><img src="../assets/web/harbin-code/var-site-1.gif" alt="SITE-1" loading="lazy" decoding="async"></figure>
+      <div class="site-info">
+        <div class="site-name">SITE-1</div>
+        <div class="site-mix"><svg class="mix-donut" viewBox="0 0 120 120" role="img" aria-label="Unit mix"><path d="M60.00 8.00 A52 52 0 1 1 51.22 111.25 L54.93 89.57 A30 30 0 1 0 60.00 30.00 Z" fill="#c7ccd4"/><path d="M51.22 111.25 A52 52 0 0 1 20.78 94.14 L37.37 79.70 A30 30 0 0 0 54.93 89.57 Z" fill="#e9d9a8"/><path d="M20.78 94.14 A52 52 0 0 1 8.54 67.49 L30.31 64.32 A30 30 0 0 0 37.37 79.70 Z" fill="#8a6f68"/><path d="M8.54 67.49 A52 52 0 0 1 12.67 38.45 L32.70 47.57 A30 30 0 0 0 30.31 64.32 Z" fill="#b9b6e6"/><path d="M12.67 38.45 A52 52 0 0 1 60.00 8.00 L60.00 30.00 A30 30 0 0 0 32.70 47.57 Z" fill="#a7c08a"/></svg><ul class="mix-legend"><li><span class="mix-sw" style="background:#c7ccd4"></span>2 BED<b>52.7%</b></li><li><span class="mix-sw" style="background:#e9d9a8"></span>3 BED<b>10.9%</b></li><li><span class="mix-sw" style="background:#8a6f68"></span>4 BED<b>9.1%</b></li><li><span class="mix-sw" style="background:#b9b6e6"></span>Circulation<b>9.1%</b></li><li><span class="mix-sw" style="background:#a7c08a"></span>Landscape<b>9.1% + 9.1%</b></li></ul></div>
+      </div>
+    </div><div class="site-card">
+      <figure class="post-fig" data-full="../assets/web/harbin-code/var-site-2.gif" data-idx="32" tabindex="0"><img src="../assets/web/harbin-code/var-site-2.gif" alt="SITE-2" loading="lazy" decoding="async"></figure>
+      <div class="site-info">
+        <div class="site-name">SITE-2</div>
+        <div class="site-mix"><svg class="mix-donut" viewBox="0 0 120 120" role="img" aria-label="Unit mix"><path d="M60.00 8.00 A52 52 0 1 1 47.36 110.44 L52.71 89.10 A30 30 0 1 0 60.00 30.00 Z" fill="#c7ccd4"/><path d="M47.36 110.44 A52 52 0 0 1 12.23 80.54 L32.44 71.85 A30 30 0 0 0 52.71 89.10 Z" fill="#e9d9a8"/><path d="M12.23 80.54 A52 52 0 0 1 8.22 55.26 L30.12 57.27 A30 30 0 0 0 32.44 71.85 Z" fill="#8a6f68"/><path d="M8.22 55.26 A52 52 0 0 1 19.87 26.92 L36.85 40.92 A30 30 0 0 0 30.12 57.27 Z" fill="#b9b6e6"/><path d="M19.87 26.92 A52 52 0 0 1 60.00 8.00 L60.00 30.00 A30 30 0 0 0 36.85 40.92 Z" fill="#a7c08a"/></svg><ul class="mix-legend"><li><span class="mix-sw" style="background:#c7ccd4"></span>2 BED<b>53.8%</b></li><li><span class="mix-sw" style="background:#e9d9a8"></span>3 BED<b>14.6%</b></li><li><span class="mix-sw" style="background:#8a6f68"></span>4 BED<b>7.9%</b></li><li><span class="mix-sw" style="background:#b9b6e6"></span>Circulation<b>9.5%</b></li><li><span class="mix-sw" style="background:#a7c08a"></span>Landscape<b>7% + 7%</b></li></ul></div>
+      </div>
+    </div><div class="site-card">
+      <figure class="post-fig" data-full="../assets/web/harbin-code/var-site-3.gif" data-idx="33" tabindex="0"><img src="../assets/web/harbin-code/var-site-3.gif" alt="SITE-3" loading="lazy" decoding="async"></figure>
+      <div class="site-info">
+        <div class="site-name">SITE-3</div>
+        <div class="site-mix"><svg class="mix-donut" viewBox="0 0 120 120" role="img" aria-label="Unit mix"><path d="M60.00 8.00 A52 52 0 1 1 49.62 110.95 L54.01 89.40 A30 30 0 1 0 60.00 30.00 Z" fill="#c7ccd4"/><path d="M49.62 110.95 A52 52 0 0 1 13.97 84.19 L33.44 73.95 A30 30 0 0 0 54.01 89.40 Z" fill="#e9d9a8"/><path d="M13.97 84.19 A52 52 0 0 1 8.00 59.35 L30.00 59.62 A30 30 0 0 0 33.44 73.95 Z" fill="#8a6f68"/><path d="M8.00 59.35 A52 52 0 0 1 17.18 30.50 L35.29 42.98 A30 30 0 0 0 30.00 59.62 Z" fill="#b9b6e6"/><path d="M17.18 30.50 A52 52 0 0 1 60.00 8.00 L60.00 30.00 A30 30 0 0 0 35.29 42.98 Z" fill="#a7c08a"/></svg><ul class="mix-legend"><li><span class="mix-sw" style="background:#c7ccd4"></span>2 BED<b>53.2%</b></li><li><span class="mix-sw" style="background:#e9d9a8"></span>3 BED<b>14.1%</b></li><li><span class="mix-sw" style="background:#8a6f68"></span>4 BED<b>7.9%</b></li><li><span class="mix-sw" style="background:#b9b6e6"></span>Circulation<b>9.4%</b></li><li><span class="mix-sw" style="background:#a7c08a"></span>Landscape<b>7.7% + 7.7%</b></li></ul></div>
+      </div>
+    </div><div class="site-card">
+      <figure class="post-fig" data-full="../assets/web/harbin-code/var-site-4.gif" data-idx="34" tabindex="0"><img src="../assets/web/harbin-code/var-site-4.gif" alt="SITE-4" loading="lazy" decoding="async"></figure>
+      <div class="site-info">
+        <div class="site-name">SITE-4</div>
+        <div class="site-mix"><svg class="mix-donut" viewBox="0 0 120 120" role="img" aria-label="Unit mix"><path d="M60.00 8.00 A52 52 0 1 1 49.12 110.85 L53.73 89.34 A30 30 0 1 0 60.00 30.00 Z" fill="#c7ccd4"/><path d="M49.12 110.85 A52 52 0 0 1 14.64 85.43 L33.83 74.67 A30 30 0 0 0 53.73 89.34 Z" fill="#e9d9a8"/><path d="M14.64 85.43 A52 52 0 0 1 8.00 60.08 L30.00 60.05 A30 30 0 0 0 33.83 74.67 Z" fill="#8a6f68"/><path d="M8.00 60.08 A52 52 0 0 1 16.78 31.08 L35.07 43.32 A30 30 0 0 0 30.00 60.05 Z" fill="#b9b6e6"/><path d="M16.78 31.08 A52 52 0 0 1 60.00 8.00 L60.00 30.00 A30 30 0 0 0 35.07 43.32 Z" fill="#a7c08a"/></svg><ul class="mix-legend"><li><span class="mix-sw" style="background:#c7ccd4"></span>2 BED<b>53.3%</b></li><li><span class="mix-sw" style="background:#e9d9a8"></span>3 BED<b>13.5%</b></li><li><span class="mix-sw" style="background:#8a6f68"></span>4 BED<b>8.1%</b></li><li><span class="mix-sw" style="background:#b9b6e6"></span>Circulation<b>9.4%</b></li><li><span class="mix-sw" style="background:#a7c08a"></span>Landscape<b>7.8% + 7.8%</b></li></ul></div>
+      </div>
+    </div><div class="site-card">
+      <figure class="post-fig" data-full="../assets/web/harbin-code/var-site-5.gif" data-idx="35" tabindex="0"><img src="../assets/web/harbin-code/var-site-5.gif" alt="SITE-5" loading="lazy" decoding="async"></figure>
+      <div class="site-info">
+        <div class="site-name">SITE-5</div>
+        <div class="site-mix"><svg class="mix-donut" viewBox="0 0 120 120" role="img" aria-label="Unit mix"><path d="M60.00 8.00 A52 52 0 1 1 50.82 111.18 L54.70 89.53 A30 30 0 1 0 60.00 30.00 Z" fill="#c7ccd4"/><path d="M50.82 111.18 A52 52 0 0 1 13.98 84.20 L33.45 73.96 A30 30 0 0 0 54.70 89.53 Z" fill="#e9d9a8"/><path d="M13.98 84.20 A52 52 0 0 1 8.00 60.57 L30.00 60.33 A30 30 0 0 0 33.45 73.96 Z" fill="#8a6f68"/><path d="M8.00 60.57 A52 52 0 0 1 16.35 31.74 L34.82 43.70 A30 30 0 0 0 30.00 60.33 Z" fill="#b9b6e6"/><path d="M16.35 31.74 A52 52 0 0 1 60.00 8.00 L60.00 30.00 A30 30 0 0 0 34.82 43.70 Z" fill="#a7c08a"/></svg><ul class="mix-legend"><li><span class="mix-sw" style="background:#c7ccd4"></span>2 BED<b>53.3%</b></li><li><span class="mix-sw" style="background:#e9d9a8"></span>3 BED<b>14.6%</b></li><li><span class="mix-sw" style="background:#8a6f68"></span>4 BED<b>7.6%</b></li><li><span class="mix-sw" style="background:#b9b6e6"></span>Circulation<b>9.4%</b></li><li><span class="mix-sw" style="background:#a7c08a"></span>Landscape<b>7.7% + 8.3%</b></li></ul></div>
+      </div>
+    </div><div class="site-card">
+      <figure class="post-fig" data-full="../assets/web/harbin-code/var-site-6.gif" data-idx="36" tabindex="0"><img src="../assets/web/harbin-code/var-site-6.gif" alt="SITE-6" loading="lazy" decoding="async"></figure>
+      <div class="site-info">
+        <div class="site-name">SITE-6</div>
+        <div class="site-mix"><svg class="mix-donut" viewBox="0 0 120 120" role="img" aria-label="Unit mix"><path d="M60.00 8.00 A52 52 0 1 1 46.47 110.21 L52.20 88.97 A30 30 0 1 0 60.00 30.00 Z" fill="#c7ccd4"/><path d="M46.47 110.21 A52 52 0 0 1 11.87 79.68 L32.23 71.35 A30 30 0 0 0 52.20 88.97 Z" fill="#e9d9a8"/><path d="M11.87 79.68 A52 52 0 0 1 8.41 53.52 L30.23 56.26 A30 30 0 0 0 32.23 71.35 Z" fill="#8a6f68"/><path d="M8.41 53.52 A52 52 0 0 1 21.29 25.27 L37.67 39.97 A30 30 0 0 0 30.23 56.26 Z" fill="#b9b6e6"/><path d="M21.29 25.27 A52 52 0 0 1 60.00 8.00 L60.00 30.00 A30 30 0 0 0 37.67 39.97 Z" fill="#a7c08a"/></svg><ul class="mix-legend"><li><span class="mix-sw" style="background:#c7ccd4"></span>2 BED<b>51.1%</b></li><li><span class="mix-sw" style="background:#e9d9a8"></span>3 BED<b>13.8%</b></li><li><span class="mix-sw" style="background:#8a6f68"></span>4 BED<b>7.7%</b></li><li><span class="mix-sw" style="background:#b9b6e6"></span>Circulation<b>9.1%</b></li><li><span class="mix-sw" style="background:#a7c08a"></span>Landscape<b>6.3% + 6.3%</b></li></ul></div>
+      </div>
+    </div><div class="site-card">
+      <figure class="post-fig" data-full="../assets/web/harbin-code/var-site-7.gif" data-idx="37" tabindex="0"><img src="../assets/web/harbin-code/var-site-7.gif" alt="SITE-7" loading="lazy" decoding="async"></figure>
+      <div class="site-info">
+        <div class="site-name">SITE-7</div>
+        <div class="site-mix"><svg class="mix-donut" viewBox="0 0 120 120" role="img" aria-label="Unit mix"><path d="M60.00 8.00 A52 52 0 1 1 49.19 110.86 L53.76 89.34 A30 30 0 1 0 60.00 30.00 Z" fill="#c7ccd4"/><path d="M49.19 110.86 A52 52 0 0 1 11.00 77.41 L31.73 70.05 A30 30 0 0 0 53.76 89.34 Z" fill="#e9d9a8"/><path d="M11.00 77.41 A52 52 0 0 1 8.24 55.04 L30.14 57.14 A30 30 0 0 0 31.73 70.05 Z" fill="#8a6f68"/><path d="M8.24 55.04 A52 52 0 0 1 20.12 26.64 L36.99 40.75 A30 30 0 0 0 30.14 57.14 Z" fill="#b9b6e6"/><path d="M20.12 26.64 A52 52 0 0 1 60.00 8.00 L60.00 30.00 A30 30 0 0 0 36.99 40.75 Z" fill="#a7c08a"/></svg><ul class="mix-legend"><li><span class="mix-sw" style="background:#c7ccd4"></span>2 BED<b>55.2%</b></li><li><span class="mix-sw" style="background:#e9d9a8"></span>3 BED<b>16.8%</b></li><li><span class="mix-sw" style="background:#8a6f68"></span>4 BED<b>7.2%</b></li><li><span class="mix-sw" style="background:#b9b6e6"></span>Circulation<b>9.9%</b></li><li><span class="mix-sw" style="background:#a7c08a"></span>Landscape<b>7.2% + 7.2%</b></li></ul></div>
+      </div>
+    </div></div>
+<div class="post-eyebrow">Result</div>
+<h2 class="post-h">Harbin, <span class="post-h-ac">rendered</span></h2>
+<p class="post-p">Final Lumion renders — some AI-enhanced — place the towers back into Harbin's winter landscape: clustered and staggered to reduce exposed façade, break wind corridors and shelter the outdoor realm from snow.</p>
+<div class="post-media one"><figure class="post-fig" data-full="../assets/web/harbin-code/render-lumion.jpg" data-idx="38" tabindex="0"><img src="../assets/web/harbin-code/render-lumion.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div>
+<div class="post-media row cols-2"><figure class="post-fig" data-full="../assets/web/harbin-code/render-ai-1.jpg" data-idx="39" tabindex="0"><img src="../assets/web/harbin-code/render-ai-1.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure><figure class="post-fig" data-full="../assets/web/harbin-code/render-ai-2.jpg" data-idx="40" tabindex="0"><img src="../assets/web/harbin-code/render-ai-2.jpg" alt="The Harbin Code" loading="lazy" decoding="async"></figure></div></div>
+      
+      
+      <nav class="proj-nav">
+        <a href="sine-tide.html" class="pn-prev"><span class="pn-l">← Previous</span><span class="pn-t">Structure</span></a>
+        <a href="../section/masters.html" class="pn-home">Master’s Work</a>
+        <a href="hyperbuilding.html" class="pn-next"><span class="pn-l">Next →</span><span class="pn-t">Hyperbuilding 02 — The Heart</span></a>
+      </nav>
+    </div>
+    
+  </article>
+</div>
+<div class="lightbox" id="lb" hidden><button class="lb-close" aria-label="Close">✕</button><button class="lb-prev" aria-label="Previous">‹</button><img id="lb-img" alt=""><button class="lb-next" aria-label="Next">›</button><div class="lb-cap" id="lb-cap"></div></div>
+<script>/* ===== THEME ===== */
+(function(){
+  const root=document.documentElement;
+  function set(t){root.setAttribute('data-theme',t);try{localStorage.setItem('sr-theme',t)}catch(e){}}
+  try{const s=localStorage.getItem('sr-theme');if(s)set(s)}catch(e){}
+  function toggle(){set(root.getAttribute('data-theme')==='dark'?'light':'dark')}
+  ['themeBtn','themeBtnM'].forEach(id=>{const b=document.getElementById(id);if(b)b.addEventListener('click',toggle)});
+})();
+
+/* ===== SCROLLSPY (home only) ===== */
+(function(){
+  const links=[...document.querySelectorAll('#nav a')].filter(a=>a.getAttribute('href').startsWith('#'));
+  if(!links.length)return;
+  const map=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));
+  const obs=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){
+    links.forEach(l=>l.classList.remove('active'));const a=map.get(e.target.id);if(a)a.classList.add('active');
+  }})},{rootMargin:'-45% 0px -50% 0px'});
+  ['top','about','work','education','contact'].forEach(id=>{const el=document.getElementById(id);if(el)obs.observe(el)});
+})();
+
+/* ===== CARD REVEAL ===== */
+(function(){
+  const cards=document.querySelectorAll('.card');if(!cards.length)return;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){cards.forEach(c=>c.classList.add('in'));return;}
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  cards.forEach(c=>io.observe(c));
+})();
+
+/* ===== ANIMATED COVER VIDEOS ON GRID CARDS ===== */
+(function(){
+  const vids=[...document.querySelectorAll('.card-vid')];if(!vids.length)return;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  // play only while the card is on screen (saves bandwidth, reliable autoplay)
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    const v=e.target;
+    if(e.isIntersecting){ v.play().catch(()=>{}); }
+    else { v.pause(); }
+  }),{threshold:0.15});
+  vids.forEach(v=>io.observe(v));
+})();
+
+/* ===== DRAWING CAROUSEL (plans/sections/elevations) ===== */
+/* Auto-advances every ~2.2s; pauses on hover / when the user clicks, then resumes. */
+(function(){
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const INTERVAL=1800;      // auto-advance cadence (~every ~2s, legible)
+  const RESUME=7000;        // resume auto-play this long after a manual interaction
+  document.querySelectorAll('.draw-carousel').forEach(car=>{
+    const stage=car.querySelector('.draw-stage img');
+    const thumbs=[...car.querySelectorAll('.draw-thumb')];
+    const cur=car.querySelector('.dc-cur');
+    const figcap=car.querySelector('.draw-figcap');
+    if(!stage||thumbs.length<2){return;}
+    let idx=0, timer=null, resumeTimer=null, hovering=false;
+    function setCap(cap){ if(!figcap)return; if(cap){figcap.textContent=cap;figcap.hidden=false;} else {figcap.hidden=true;} }
+    function show(i){
+      idx=(i+thumbs.length)%thumbs.length;
+      const src=thumbs[idx].dataset.src;
+      const cap=thumbs[idx].dataset.cap||'';
+      if(stage.getAttribute('src')!==src){
+        if(reduce){stage.src=src;setCap(cap);}
+        else{ stage.style.opacity='0';
+          // swap image + caption together after a short fade-out
+          setTimeout(()=>{stage.src=src;setCap(cap);stage.style.opacity='1';},180);
+        }
+      } else { setCap(cap); }
+      stage.dataset.full=src;
+      thumbs.forEach((t,k)=>t.classList.toggle('on',k===idx));
+      // keep the active thumbnail visible in the scrollable bottom rail
+      const active=thumbs[idx];
+      if(active&&active.scrollIntoView){active.scrollIntoView({block:'nearest',inline:'center',behavior:reduce?'auto':'smooth'});}
+      if(cur)cur.textContent=idx+1;
+    }
+    function play(){ if(reduce||hovering||timer)return; timer=setInterval(()=>show(idx+1),INTERVAL); }
+    function pause(){ if(timer){clearInterval(timer);timer=null;} }
+    function manual(fn){ pause(); fn(); clearTimeout(resumeTimer); resumeTimer=setTimeout(()=>{ if(!hovering)play(); },RESUME); }
+    thumbs.forEach((t,i)=>t.addEventListener('click',()=>manual(()=>show(i))));
+    car.querySelectorAll('.dprev').forEach(b=>b.addEventListener('click',()=>manual(()=>show(idx-1))));
+    car.querySelectorAll('.dnext').forEach(b=>b.addEventListener('click',()=>manual(()=>show(idx+1))));
+    // pause while hovering the whole carousel so users can read a drawing
+    car.addEventListener('mouseenter',()=>{hovering=true;pause();});
+    car.addEventListener('mouseleave',()=>{hovering=false;play();});
+    // only auto-play while the carousel is on screen. threshold:0 (any pixel) so it
+    // still fires when the carousel is taller than the viewport — the tall-element
+    // pitfall that stopped auto-advance before.
+    const io=new IntersectionObserver(es=>es.forEach(e=>{e.isIntersecting?play():pause();}),{threshold:0,rootMargin:'0px 0px -10% 0px'});
+    io.observe(car);
+    // kick off immediately if it's already in view on load
+    if(!reduce){const r=car.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)play();}
+  });
+})();
+
+/* ===== VOICE-OVER (browser Text-to-Speech) ===== */
+(function(){
+  const btn=document.getElementById('voBtn');if(!btn)return;
+  const synth=window.speechSynthesis;
+  const label=btn.querySelector('.vo-label');
+  // no TTS support → hide the button rather than show a dead control
+  if(!synth||typeof SpeechSynthesisUtterance==='undefined'){btn.style.display='none';return;}
+  const text=btn.dataset.narration||'';
+  if(!text.trim()){btn.style.display='none';return;}
+
+  let utter=null, state='idle'; // idle | playing | paused
+
+  // pick a natural English voice if available (prefer local, en-GB/US, non-novelty)
+  function pickVoice(){
+    const vs=synth.getVoices();if(!vs.length)return null;
+    const en=vs.filter(v=>/^en(-|_|$)/i.test(v.lang));
+    const pool=en.length?en:vs;
+    const pref=pool.find(v=>/natural|google|samantha|zira|aria|libby|jenny/i.test(v.name))
+      ||pool.find(v=>v.localService)||pool[0];
+    return pref;
+  }
+
+  function setState(s){
+    state=s;
+    btn.classList.toggle('playing',s==='playing');
+    if(label)label.textContent=s==='playing'?'Pause':(s==='paused'?'Resume':'Listen');
+    btn.setAttribute('aria-label',s==='playing'?'Pause narration':(s==='paused'?'Resume narration':'Play voice-over narration'));
+  }
+
+  // Chrome silently truncates a long utterance (~200-300 chars in), which cut the
+  // masters narrations off mid-way — they run to several thousand chars. So split
+  // into sentence-sized chunks and queue them; the engine plays them back-to-back.
+  function chunk(s){
+    const LIMIT=200;
+    // a single sentence can exceed the limit on its own → split it at clause breaks
+    const split=one=>{
+      if(one.length<=LIMIT)return [one];
+      const bits=one.split(/(?<=[,;:])\s+/), out=[]; let b='';
+      for(const x of bits){
+        if((b+' '+x).trim().length>LIMIT && b){ out.push(b.trim()); b=x; }
+        else b=(b?b+' ':'')+x;
+      }
+      if(b.trim())out.push(b.trim());
+      return out;
+    };
+    const parts=s.match(/[^.!?]+[.!?]+(\s|$)/g)||[s];
+    const out=[]; let buf='';
+    for(const part of parts){
+      if((buf+part).length>LIMIT && buf){ out.push(buf.trim()); buf=part; }
+      else buf+=part;
+    }
+    if(buf.trim())out.push(buf.trim());
+    return out.flatMap(split);
+  }
+
+  function start(){
+    synth.cancel();
+    const v=pickVoice();
+    const parts=chunk(text);
+    parts.forEach((part,i)=>{
+      const u=new SpeechSynthesisUtterance(part);
+      if(v)u.voice=v;
+      u.rate=0.98;u.pitch=1.0;u.lang=(v&&v.lang)||'en-US';
+      if(i===parts.length-1){u.onend=()=>setState('idle');}
+      u.onerror=()=>setState('idle');
+      if(i===0)utter=u;
+      synth.speak(u);
+    });
+    setState('playing');
+  }
+
+  btn.addEventListener('click',()=>{
+    if(state==='idle'){start();}
+    else if(state==='playing'){synth.pause();setState('paused');}
+    else if(state==='paused'){synth.resume();setState('playing');}
+  });
+
+  // voices can load async in some browsers → refresh selection when they arrive
+  if(synth.onvoiceschanged!==undefined){synth.onvoiceschanged=()=>{};}
+  // always stop speaking when leaving / hiding the page (avoids it following you)
+  window.addEventListener('pagehide',()=>synth.cancel());
+  window.addEventListener('beforeunload',()=>synth.cancel());
+  document.addEventListener('visibilitychange',()=>{
+    if(document.hidden&&state==='playing'){synth.pause();setState('paused');}
+  });
+})();
+
+/* ===== LIGHTBOX (project galleries) ===== */
+(function(){
+  const lb=document.getElementById('lb');if(!lb)return;
+  const items=[...document.querySelectorAll('.gitem, .feat, .post-fig, .slide-fig, .brief-media, .brief-media-item, .brief-stack-item')];
+  const img=document.getElementById('lb-img'),cap=document.getElementById('lb-cap');
+  let cur=0;
+  const srcs=items.map(el=>({src:el.dataset.full||el.querySelector('img').src,alt:el.querySelector('img').alt}));
+  function show(i){cur=(i+srcs.length)%srcs.length;img.src=srcs[cur].src;img.alt=srcs[cur].alt;cap.textContent=srcs.length>1?(cur+1)+' / '+srcs.length:'';}
+  function open(i){show(i);lb.hidden=false;document.body.style.overflow='hidden';}
+  function openSrc(src,alt){img.src=src;img.alt=alt||'';cap.textContent='';lb.hidden=false;document.body.style.overflow='hidden';}
+  function close(){lb.hidden=true;img.src='';document.body.style.overflow='';}
+  items.forEach((el,i)=>{el.addEventListener('click',()=>open(i));el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(i)}});});
+  // drawing carousel stages open the currently-shown drawing (standalone)
+  document.querySelectorAll('.draw-stage').forEach(st=>st.addEventListener('click',()=>{
+    const im=st.querySelector('img');openSrc(im.dataset.full||im.src,im.alt);
+  }));
+  lb.querySelector('.lb-close').addEventListener('click',close);
+  lb.querySelector('.lb-prev').addEventListener('click',e=>{e.stopPropagation();if(srcs.length)show(cur-1)});
+  lb.querySelector('.lb-next').addEventListener('click',e=>{e.stopPropagation();if(srcs.length)show(cur+1)});
+  lb.addEventListener('click',e=>{if(e.target===lb)close()});
+  document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')close();if(!srcs.length)return;if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1);});
+})();
+
+/* ===== PAGED HOME NAVIGATION ===== */
+(function(){
+  if(!document.body.classList.contains('paged'))return;
+  const pages=[...document.querySelectorAll('.page')];
+  if(!pages.length)return;
+  let cur=0;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function go(i){
+    i=Math.max(0,Math.min(pages.length-1,i));
+    cur=i;
+    pages.forEach((p,idx)=>p.classList.toggle('active',idx===i));
+    document.querySelectorAll('[data-dot]').forEach(d=>d.classList.toggle('on',+d.dataset.dot===i));
+    // move focus for a11y without scrolling the whole doc
+    pages[i].setAttribute('tabindex','-1');
+  }
+  function idOf(id){return pages.findIndex(p=>p.id===id);}
+  document.querySelectorAll('[data-next]').forEach(b=>b.addEventListener('click',()=>go(idOf(b.dataset.next))));
+  document.querySelectorAll('[data-prev]').forEach(b=>b.addEventListener('click',()=>go(idOf(b.dataset.prev))));
+  document.querySelectorAll('[data-dot]').forEach(d=>d.addEventListener('click',()=>go(+d.dataset.dot)));
+  // keyboard: arrows / page up-down
+  document.addEventListener('keydown',e=>{
+    if(document.querySelector('.lightbox:not([hidden])'))return;
+    if(e.key==='ArrowRight'||e.key==='PageDown'){go(cur+1);}
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){go(cur-1);}
+  });
+  // wheel: gentle page advance (debounced), only if not mid-scroll inside a page
+  let wlock=false;
+  window.addEventListener('wheel',e=>{
+    if(reduce||wlock)return;
+    const pg=pages[cur];
+    const canScroll=pg.scrollHeight>pg.clientHeight+4;
+    if(canScroll){
+      const atTop=pg.scrollTop<=0, atBottom=pg.scrollTop+pg.clientHeight>=pg.scrollHeight-4;
+      if((e.deltaY>0&&!atBottom)||(e.deltaY<0&&!atTop))return; // let it scroll internally
+    }
+    if(Math.abs(e.deltaY)<18)return;
+    wlock=true;setTimeout(()=>wlock=false,650);
+    go(cur+(e.deltaY>0?1:-1));
+  },{passive:true});
+  // swipe on touch
+  let ty=null;
+  window.addEventListener('touchstart',e=>{ty=e.touches[0].clientY;},{passive:true});
+  window.addEventListener('touchend',e=>{
+    if(ty===null)return;const dy=ty-e.changedTouches[0].clientY;
+    if(Math.abs(dy)>60)go(cur+(dy>0?1:-1));
+    ty=null;
+  },{passive:true});
+  go(0);
+})();
+
+/* ===== HERO GRAPH ===== */
+(function(){
+  const cv=document.getElementById('graph');if(!cv)return;
+  const ctx=cv.getContext('2d');
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W,H,DPR,nodes=[],raf,running=true;
+  // Accent + line colours are read from the CSS tokens (--cyan / --line) so the
+  // graph always tracks the palette — hardcoding them here silently desyncs the
+  // canvas from the rest of the site whenever the theme changes.
+  const rgbOf=(v,fallback)=>{
+    const s=getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+    let m=s.match(/^#([0-9a-f]{6})$/i);
+    if(m){const n=parseInt(m[1],16);return `rgba(${n>>16&255},${n>>8&255},${n&255},`;}
+    m=s.match(/^rgba?\(\s*([\d.]+)[,\s]+([\d.]+)[,\s]+([\d.]+)/i);
+    if(m)return `rgba(${+m[1]},${+m[2]},${+m[3]},`;
+    return fallback;
+  };
+  let CY=rgbOf('--cyan','rgba(46,230,200,');
+  let LC=rgbOf('--line','rgba(139,160,186,');
+  function line(){return LC;}
+  // re-read on theme flip
+  new MutationObserver(()=>{CY=rgbOf('--cyan',CY);LC=rgbOf('--line',LC);})
+    .observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+  function resize(){DPR=Math.min(devicePixelRatio||1,2);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*DPR;cv.height=H*DPR;ctx.setTransform(DPR,0,0,DPR,0,0);build();}
+  function build(){const count=Math.max(26,Math.min(64,Math.round(W*H/26000)));nodes=[];for(let i=0;i<count;i++){nodes.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22,r:Math.random()*1.6+1.1,hub:Math.random()<.14});}}
+  const LINK=118;
+  function frame(){
+    ctx.clearRect(0,0,W,H);const lc=line();
+    for(let i=0;i<nodes.length;i++){const a=nodes[i];for(let j=i+1;j<nodes.length;j++){const b=nodes[j];const dx=a.x-b.x,dy=a.y-b.y,d=Math.hypot(dx,dy);if(d<LINK){const o=(1-d/LINK)*.5;ctx.strokeStyle=(a.hub||b.hub)?CY+(o*.9)+')':lc+(o*.55)+')';ctx.lineWidth=(a.hub||b.hub)?1:.7;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}}}
+    for(const n of nodes){if(!reduce){n.x+=n.vx;n.y+=n.vy;if(n.x<0||n.x>W)n.vx*=-1;if(n.y<0||n.y>H)n.vy*=-1;}if(n.hub){ctx.beginPath();ctx.arc(n.x,n.y,n.r+2.6,0,7);ctx.fillStyle=CY+'.9)';ctx.fill();ctx.beginPath();ctx.arc(n.x,n.y,n.r+7,0,7);ctx.strokeStyle=CY+'.28)';ctx.lineWidth=1;ctx.stroke();}else{ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,7);ctx.fillStyle=lc+'.6)';ctx.fill();}}
+    if(running&&!reduce)raf=requestAnimationFrame(frame);
+  }
+  function start(){cancelAnimationFrame(raf);running=true;frame();}
+  window.addEventListener('resize',()=>{clearTimeout(cv._t);cv._t=setTimeout(resize,150)});
+  document.addEventListener('visibilitychange',()=>{running=!document.hidden;if(running&&!reduce)start();else cancelAnimationFrame(raf);});
+  resize();if(reduce){frame();}else{start();}
+})();
+</script>
+</body></html>

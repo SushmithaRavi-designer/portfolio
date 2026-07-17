@@ -1,0 +1,446 @@
+<title>Bio-Spatial Intelligence — How It Works</title>
+<style>
+  :root {
+    --bg-0:   #05090f;
+    --bg-1:   #0a121c;
+    --panel:  #0d1826;
+    --panel-2:#0f1f31;
+    --cyan:   #35e0f5;
+    --cyan-soft:#8fe9f6;
+    --cyan-dim: #2aa7bd;
+    --ink:    #dff3f8;
+    --ink-soft:#7f9bb0;
+    --line:   #16344a;
+    --mono: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Menlo, Consolas, monospace;
+    --sans: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  }
+
+  /* This diagram deliberately commits to a single neon-on-black world,
+     matching the reference image — so it stays single-theme by design. */
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background:
+      radial-gradient(900px 480px at 12% -8%, rgba(53,224,245,.10), transparent 60%),
+      radial-gradient(1000px 520px at 100% 120%, rgba(53,224,245,.07), transparent 60%),
+      linear-gradient(180deg, var(--bg-0), var(--bg-1));
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  .wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: clamp(30px, 6vw, 70px) clamp(16px, 3vw, 40px) 60px;
+  }
+
+  /* ---------- heading ---------- */
+  h1 {
+    font-family: var(--sans);
+    font-weight: 800;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    margin: 0 0 .35rem;
+    color: var(--cyan);
+    text-shadow:
+      0 0 6px rgba(53,224,245,.55),
+      0 0 26px rgba(53,224,245,.35),
+      0 0 60px rgba(53,224,245,.18);
+  }
+  .sub {
+    margin: 0 0 clamp(30px, 5vw, 52px);
+    color: var(--ink-soft);
+    font-size: clamp(1rem, 1.7vw, 1.2rem);
+    letter-spacing: .01em;
+  }
+
+  /* ---------- controls ---------- */
+  .controls { display:flex; align-items:center; gap:12px; margin-bottom: 26px; flex-wrap: wrap; }
+  .btn {
+    font-family: var(--sans); font-size: .9rem; font-weight: 600; letter-spacing:.02em;
+    color: var(--cyan-soft);
+    background: linear-gradient(180deg, var(--panel-2), var(--panel));
+    border: 1px solid var(--cyan-dim);
+    border-radius: 999px;
+    padding: 9px 18px;
+    display: inline-flex; align-items: center; gap: .5em;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgba(53,224,245,.06) inset, 0 6px 20px -10px rgba(53,224,245,.5);
+    transition: transform .12s ease, box-shadow .2s ease, color .2s ease;
+  }
+  .btn:hover { transform: translateY(-1px); color: #eafbfe;
+    box-shadow: 0 0 0 1px rgba(53,224,245,.2) inset, 0 0 18px rgba(53,224,245,.35); }
+  .btn:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+  .btn .g { width:15px; height:15px; display:inline-flex; }
+  .hint { font-family: var(--mono); font-size:.7rem; color: var(--ink-soft); letter-spacing:.06em; }
+
+  /* ---------- the single-line flow ---------- */
+  .flowline-outer {
+    overflow: visible;
+    padding: 40px 2px 34px;
+  }
+
+  .flowline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+    padding: 0 2px;
+  }
+
+  /* pill node — flexes to share the row so all steps fit without scrolling */
+  .node {
+    position: relative;
+    flex: 0 1 auto;
+    min-width: 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .pill {
+    position: relative;
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: clamp(.6rem, 1.15vw, 1rem);
+    letter-spacing: .005em;
+    color: var(--ink);
+    white-space: nowrap;
+    padding: clamp(9px, 1.3vw, 15px) clamp(11px, 1.8vw, 26px);
+    border-radius: 999px;
+    background: linear-gradient(180deg, var(--panel-2), var(--panel));
+    border: 1.5px solid var(--cyan-dim);
+    box-shadow:
+      0 0 0 1px rgba(53,224,245,.05) inset,
+      0 0 14px rgba(53,224,245,.10);
+    cursor: pointer;
+    transition: border-color .3s ease, box-shadow .35s ease, transform .3s ease, color .3s ease;
+  }
+  .pill:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+  .node:hover .pill { border-color: var(--cyan); }
+
+  .node.active .pill {
+    color: #f0feff;
+    border-color: var(--cyan);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow:
+      0 0 0 1px rgba(53,224,245,.25) inset,
+      0 0 16px rgba(53,224,245,.55),
+      0 0 42px rgba(53,224,245,.30);
+  }
+  .node.done .pill { border-color: var(--cyan-dim); box-shadow: 0 0 12px rgba(53,224,245,.16); }
+
+  /* step index + caption under each pill */
+  .cap {
+    font-family: var(--mono);
+    font-size: clamp(.5rem, .7vw, .64rem);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-align: center;
+    max-width: 120px;
+    line-height: 1.35;
+    transition: color .3s ease;
+  }
+  .cap b { color: var(--cyan-dim); }
+  .node.active .cap { color: var(--cyan-soft); }
+  .node.active .cap b { color: var(--cyan); }
+
+  /* connector between pills — shrinks first so pills keep their labels */
+  .link {
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 14px;
+    max-width: 84px;
+    height: 2px;
+    margin: 26px 2px 0;             /* top margin vertically centers on the pill row */
+    align-self: flex-start;
+    background: var(--line);
+    border-radius: 2px;
+    overflow: visible;
+  }
+  .link .fill {
+    position: absolute; inset: 0;
+    width: 0%;
+    background: linear-gradient(90deg, var(--cyan-dim), var(--cyan));
+    box-shadow: 0 0 8px rgba(53,224,245,.6);
+    border-radius: 2px;
+    transition: width .5s cubic-bezier(.4,0,.3,1);
+  }
+  .link.lit .fill { width: 100%; }
+  /* traveling spark */
+  .link .spark {
+    position: absolute; top: 50%; left: 0;
+    width: 8px; height: 8px; margin: -4px 0 0 -4px;
+    border-radius: 50%;
+    background: #eafcff;
+    box-shadow: 0 0 6px 2px rgba(53,224,245,.9), 0 0 14px 4px rgba(53,224,245,.5);
+    opacity: 0;
+  }
+
+  /* ---------- detail readout ---------- */
+  .readout {
+    margin-top: 30px;
+    min-height: 92px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: linear-gradient(180deg, rgba(15,31,49,.6), rgba(13,24,38,.6));
+    padding: 18px 22px;
+    display: flex; align-items: flex-start; gap: 18px;
+    box-shadow: 0 0 24px -14px rgba(53,224,245,.5) inset;
+    transition: border-color .3s ease;
+  }
+  .readout.lit { border-color: var(--cyan-dim); }
+  .readout .rnum {
+    font-family: var(--mono); font-weight: 700;
+    font-size: 1.6rem; color: var(--cyan);
+    line-height: 1; padding-top: 2px;
+    text-shadow: 0 0 12px rgba(53,224,245,.5);
+    font-variant-numeric: tabular-nums;
+  }
+  .readout .rbody h3 { margin: 0 0 4px; font-size: 1.05rem; font-weight: 700; color: var(--ink); }
+  .readout .rbody p  { margin: 0 0 8px; font-size: .9rem; color: var(--ink-soft); max-width: 70ch; line-height:1.5; }
+  .readout .rtags { display:flex; flex-wrap:wrap; gap:6px; }
+  .readout .rtag {
+    font-family: var(--mono); font-size:.66rem; letter-spacing:.02em;
+    padding: 3px 8px; border-radius: 5px;
+    color: var(--cyan-soft);
+    background: rgba(53,224,245,.08);
+    border: 1px solid rgba(53,224,245,.25);
+  }
+  .readout.idle .rbody p { color: var(--ink-soft); opacity:.75; }
+
+  footer {
+    margin-top: 34px; padding-top: 16px; border-top: 1px solid var(--line);
+    font-family: var(--mono); font-size: .68rem; color: var(--ink-soft);
+    display:flex; justify-content: space-between; gap:10px; flex-wrap: wrap; letter-spacing:.05em;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pill, .link .fill, .node.active .pill { transition: none !important; }
+    .link .spark { display: none; }
+  }
+</style>
+
+<div class="wrap">
+  <h1>How It Works</h1>
+  <p class="sub">One plan in — a floor's light, its ecology, and the plants that belong there, out.</p>
+
+  <div class="controls">
+    <button class="btn" id="play">
+      <span class="g" id="playg" aria-hidden="true"></span>
+      <span id="playlabel">Play walkthrough</span>
+    </button>
+    <button class="btn" id="reset">
+      <span class="g" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></span>
+      <span>Reset</span>
+    </button>
+    <span class="hint">loops continuously · click any step</span>
+  </div>
+
+  <div class="flowline-outer" id="outer">
+    <div class="flowline" id="flow"></div>
+  </div>
+
+  <div class="readout idle" id="readout" aria-live="polite">
+    <div class="rnum" id="rnum">·</div>
+    <div class="rbody">
+      <h3 id="rtitle">Press play, or click a step</h3>
+      <p id="rdesc">Each step lights up in sequence and shows the real files and data columns it produces in the Bio-Spatial pipeline.</p>
+      <div class="rtags" id="rtags"></div>
+    </div>
+  </div>
+
+  <footer>
+    <span>MachineLearning · Bio-Spatial Intelligence</span>
+    <span>Simulate → Learn → Deploy</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // ---- the real pipeline, single line ----
+  var STEPS = [
+    { label: "Upload Plan",   cap: "Input",
+      title: "Upload a floor or site plan",
+      desc: "Any floor / site / landscape image. Draw the boundary; the app clips a tile grid to it.",
+      tags: ["templates/index.html", "boundary", "tile grid"] },
+    { label: "Radiance Sim",  cap: "Simulate",
+      title: "Radiance daylight recipes (Grasshopper)",
+      desc: "recs_scenarios.gh — Honeybee + Ladybug. EPW → Wea sky; a 10×10 sensor grid runs three Radiance recipes.",
+      tags: ["UDI", "SUN_HOURS", "RADIATION"] },
+    { label: "Tile Dataset",  cap: "Encode",
+      title: "Bake to a canonical tile dataset",
+      desc: "One row per tile, joined with orientation, facade ratios and humidity — 431 scenarios × 100 tiles.",
+      tags: ["geometry_dataset.csv", "TILE_ID", "RATIO_N/E/S/W", "RELATIVE_HUMIDITY"] },
+    { label: "Cluster",       cap: "Learn",
+      title: "Unsupervised clustering → 7 niches",
+      desc: "Environmental features group tiles into 7 plant clusters; each tile gets a probability across all seven.",
+      tags: ["7 clusters", "cluster_probability ×7", "cluster_cards"] },
+    { label: "Classify",      cap: "Learn",
+      title: "Scaler → PCA → LogReg  +  Keras ANN",
+      desc: "Two supervised chains predict a tile's dominant cluster; SHAP and an ablation study explain the model.",
+      tags: ["logreg_pca_model.pkl", "plant_cluster_ann.keras", "SHAP"] },
+    { label: "Recommend",     cap: "Match",
+      title: "Plant recommender",
+      desc: "The predicted cluster maps to real species with a suitability score, the fit reason, and care notes.",
+      tags: ["species", "suitability_score", "care_notes"] },
+    { label: "Visualize",     cap: "Serve",
+      title: "Color tiles & inspect",
+      desc: "Tiles color by cluster in the Flask app; click one for its full readout — light, humidity, plant, confidence.",
+      tags: ["/api/analyze", "interactive tiles", "legend"] },
+    { label: "Export",        cap: "Output",
+      title: "Export the full dataset",
+      desc: "The complete table — env values, predictions and recommendations — downloads as CSV or Excel.",
+      tags: ["CSV", "XLSX"] }
+  ];
+
+  var flow = document.getElementById("flow");
+  var nodes = [], links = [];
+
+  STEPS.forEach(function (s, i) {
+    if (i > 0) {
+      var link = document.createElement("div");
+      link.className = "link";
+      link.innerHTML = '<div class="fill"></div><div class="spark"></div>';
+      flow.appendChild(link);
+      links.push(link);
+    }
+    var node = document.createElement("div");
+    node.className = "node";
+    node.innerHTML =
+      '<button class="pill" type="button">' + s.label + '</button>' +
+      '<div class="cap"><b>' + String(i+1).padStart(2,"0") + '</b> ' + s.cap + '</div>';
+    node.querySelector(".pill").addEventListener("click", function () { stop(); goTo(i); });
+    flow.appendChild(node);
+    nodes.push(node);
+  });
+
+  var readout = document.getElementById("readout");
+  var rnum = document.getElementById("rnum");
+  var rtitle = document.getElementById("rtitle");
+  var rdesc = document.getElementById("rdesc");
+  var rtags = document.getElementById("rtags");
+
+  var playBtn = document.getElementById("play");
+  var playLabel = document.getElementById("playlabel");
+  var playG = document.getElementById("playg");
+  var resetBtn = document.getElementById("reset");
+
+  var ICON_PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l11-7z"/></svg>';
+  var ICON_PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>';
+
+  var timers = [], playing = false, current = -1;
+  function clearTimers(){ timers.forEach(clearTimeout); timers = []; }
+
+  function fillReadout(i){
+    var s = STEPS[i];
+    readout.classList.remove("idle");
+    readout.classList.add("lit");
+    rnum.textContent = String(i+1).padStart(2,"0");
+    rtitle.textContent = s.title;
+    rdesc.textContent = s.desc;
+    rtags.innerHTML = s.tags.map(function (t){ return '<span class="rtag">'+t+'</span>'; }).join("");
+  }
+
+  function animateSpark(link){
+    var spark = link.querySelector(".spark");
+    if (!spark) return;
+    var w = link.getBoundingClientRect().width;
+    spark.style.transition = "none"; spark.style.left = "0px"; spark.style.opacity = "1";
+    void spark.offsetWidth;
+    spark.style.transition = "left .5s cubic-bezier(.4,0,.3,1), opacity .25s ease .3s";
+    spark.style.left = w + "px"; spark.style.opacity = "0";
+  }
+
+  function goTo(i){
+    current = i;
+    nodes.forEach(function (n, k){
+      n.classList.toggle("active", k === i);
+      n.classList.toggle("done", k < i);
+    });
+    // links: the link BEFORE node k has index k-1
+    links.forEach(function (l, k){
+      var lit = (k < i);            // links up to the current node are filled
+      l.classList.toggle("lit", lit);
+    });
+    if (i > 0 && !reduce) animateSpark(links[i-1]);
+    fillReadout(i);
+    updateUI();
+  }
+
+  var STEP_MS = reduce ? 900 : 1150;
+  var LOOP_GAP = reduce ? 900 : 1600;   // pause on the last step before looping
+
+  function runFrom(start){
+    playing = true; updateUI();
+    var i = start;
+    (function tick(){
+      goTo(i);
+      var last = (i >= STEPS.length - 1);
+      i = last ? 0 : i + 1;
+      // clear the "done/active/lit" trail when wrapping so the loop restarts clean
+      var delay = last ? LOOP_GAP : STEP_MS;
+      timers.push(setTimeout(function () {
+        if (last) clearTrail();
+        tick();
+      }, delay));
+    })();
+  }
+
+  function clearTrail(){
+    nodes.forEach(function (n){ n.classList.remove("active","done"); });
+    links.forEach(function (l){ l.classList.remove("lit"); });
+  }
+
+  function play(){
+    if (playing){ stop(); return; }
+    var start = (current < 0 || current >= STEPS.length - 1) ? 0 : current + 1;
+    if (current >= STEPS.length - 1){ clearTrail(); start = 0; }
+    runFrom(start);
+  }
+  function stop(){ clearTimers(); playing = false; updateUI(); }
+
+  function resetVisual(){
+    clearTimers(); playing = false; current = -1;
+    clearTrail();
+    readout.classList.remove("lit"); readout.classList.add("idle");
+    rnum.textContent = "·";
+    rtitle.textContent = "Press play, or click a step";
+    rdesc.textContent = "Each step lights up in sequence and shows the real files and data columns it produces in the Bio-Spatial pipeline.";
+    rtags.innerHTML = "";
+    updateUI();
+  }
+
+  function updateUI(){
+    playG.innerHTML = playing ? ICON_PAUSE : ICON_PLAY;
+    playLabel.textContent = playing ? "Pause"
+      : current < 0 ? "Play walkthrough" : "Resume";
+  }
+
+  playBtn.addEventListener("click", play);
+  resetBtn.addEventListener("click", resetVisual);
+  updateUI();
+
+  // gentle autostart when scrolled into view
+  var started = false;
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function (es){
+      es.forEach(function (e){
+        if (e.isIntersecting && !started){ started = true;
+          setTimeout(function (){ if (!playing && current < 0) runFrom(0); }, 450); }
+      });
+    }, { threshold: .3 });
+    io.observe(flow);
+  }
+})();
+</script>

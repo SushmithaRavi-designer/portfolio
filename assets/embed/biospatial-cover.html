@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BioSpatial Intelligence — Logo Animation</title>
+<style>
+  :root{
+    --bg:#0d1512;
+    --tile:#3a7a52;
+    --tile-lit:#57c98a;
+    --grid:rgba(120,220,160,.18);
+    --glow:rgba(120,255,180,.55);
+    --ai-glow:rgba(180,150,255,.75);
+    --gap:14px;
+    --tile-size:46px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:radial-gradient(circle at 50% 40%, #14231c 0%, var(--bg) 70%);
+    display:flex;align-items:center;justify-content:center;
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+    overflow:hidden;
+  }
+
+  /* faint tech grid backdrop */
+  body::before{
+    content:"";position:fixed;inset:0;
+    background-image:
+      linear-gradient(var(--grid) 1px,transparent 1px),
+      linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:40px 40px;
+    -webkit-mask-image:radial-gradient(circle at 50% 45%,#000 0%,transparent 65%);
+            mask-image:radial-gradient(circle at 50% 45%,#000 0%,transparent 65%);
+    opacity:.5;
+  }
+
+  .stage{position:relative;display:flex;flex-direction:column;align-items:center;gap:22px;z-index:1}
+
+  /* ---- the logo mark ---- */
+  .bsi-scene{
+    position:relative;
+    width:calc(var(--tile-size)*2 + var(--gap));
+    height:calc(var(--tile-size)*2 + var(--gap));
+  }
+
+  .bsi-tiles{
+    display:grid;
+    grid-template-columns:repeat(2,var(--tile-size));
+    grid-template-rows:repeat(2,var(--tile-size));
+    gap:var(--gap);
+  }
+  .bsi-tile{
+    border-radius:9px;
+    background:linear-gradient(145deg,var(--tile) 0%,#2c5e40 100%);
+    box-shadow:inset 0 0 0 1px rgba(160,255,200,.14), 0 4px 10px rgba(0,0,0,.35);
+    transition:none;
+  }
+  /* each tile "lights up" in sequence as intelligence sweeps them */
+  .bsi-tile:nth-child(1){animation:tileLit 4s ease-in-out infinite;animation-delay:.0s}
+  .bsi-tile:nth-child(2){animation:tileLit 4s ease-in-out infinite;animation-delay:1s}
+  .bsi-tile:nth-child(4){animation:tileLit 4s ease-in-out infinite;animation-delay:2s}
+  .bsi-tile:nth-child(3){animation:tileLit 4s ease-in-out infinite;animation-delay:3s}
+  @keyframes tileLit{
+    0%,70%,100%{
+      background:linear-gradient(145deg,var(--tile) 0%,#2c5e40 100%);
+      box-shadow:inset 0 0 0 1px rgba(160,255,200,.14), 0 4px 10px rgba(0,0,0,.35);
+    }
+    12%,30%{
+      background:linear-gradient(145deg,var(--tile-lit) 0%,#3a9c68 100%);
+      box-shadow:inset 0 0 0 1px rgba(200,255,225,.5), 0 0 18px var(--glow), 0 4px 10px rgba(0,0,0,.35);
+    }
+  }
+
+  /* orbiting AI ring (the ML "thinking" halo) */
+  .bsi-orbit-pos{
+    position:absolute;inset:0;
+    display:flex;align-items:center;justify-content:center;
+    pointer-events:none;
+  }
+  .bsi-orbit{
+    width:calc(100% + 26px);height:calc(100% + 26px);
+    border-radius:50%;
+    border:1.5px dashed var(--ai-glow);
+    opacity:.5;
+    animation:spin 7s linear infinite;
+  }
+  .bsi-node{
+    position:absolute;top:-4px;left:50%;
+    width:8px;height:8px;margin-left:-4px;border-radius:50%;
+    background:var(--ai-glow);
+    box-shadow:0 0 10px var(--ai-glow),0 0 18px var(--ai-glow);
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* the plant hops tile-to-tile, sprouting */
+  .bsi-plant{
+    position:absolute;
+    top:calc(var(--tile-size)/2);left:calc(var(--tile-size)/2);
+    transform:translate(-50%,-60%);
+    font-size:30px;
+    filter:drop-shadow(0 3px 6px rgba(0,0,0,.5));
+    animation:plantHop 4s ease-in-out infinite;
+  }
+  @keyframes plantHop{
+    /* positions: TL -> TR -> BR -> BL -> back to TL, with a sprout pop at each landing */
+    0%   {transform:translate(-50%,-60%) scale(.4);opacity:.2}
+    8%   {transform:translate(-50%,-70%) scale(1);opacity:1}   /* TL grown */
+    22%  {transform:translate(-50%,-60%) scale(1)}
+    25%  {transform:translate(calc(-50% + var(--tile-size) + var(--gap)),-60%) scale(.4);opacity:.5}
+    33%  {transform:translate(calc(-50% + var(--tile-size) + var(--gap)),-70%) scale(1);opacity:1} /* TR */
+    47%  {transform:translate(calc(-50% + var(--tile-size) + var(--gap)),-60%) scale(1)}
+    50%  {transform:translate(calc(-50% + var(--tile-size) + var(--gap)),calc(-60% + var(--tile-size) + var(--gap))) scale(.4);opacity:.5}
+    58%  {transform:translate(calc(-50% + var(--tile-size) + var(--gap)),calc(-70% + var(--tile-size) + var(--gap))) scale(1);opacity:1} /* BR */
+    72%  {transform:translate(calc(-50% + var(--tile-size) + var(--gap)),calc(-60% + var(--tile-size) + var(--gap))) scale(1)}
+    75%  {transform:translate(-50%,calc(-60% + var(--tile-size) + var(--gap))) scale(.4);opacity:.5}
+    83%  {transform:translate(-50%,calc(-70% + var(--tile-size) + var(--gap))) scale(1);opacity:1} /* BL */
+    97%  {transform:translate(-50%,calc(-60% + var(--tile-size) + var(--gap))) scale(1)}
+    100% {transform:translate(-50%,-60%) scale(.4);opacity:.2}
+  }
+
+  /* wordmark */
+  .wordmark{text-align:center;letter-spacing:.5px}
+  .wordmark h1{
+    font-size:19px;font-weight:700;color:#eafff2;
+    text-shadow:0 0 14px rgba(120,255,180,.25);
+  }
+  .wordmark p{
+    margin-top:4px;font-size:10.5px;font-weight:500;letter-spacing:1.5px;
+    text-transform:uppercase;color:#8fd8ab;opacity:.8;
+  }
+  .wordmark .ai{color:#c7b3ff}
+
+  @media (prefers-reduced-motion:reduce){
+    .bsi-tile,.bsi-orbit,.bsi-plant{animation:none}
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <!-- the animated logo mark -->
+    <div class="bsi-scene">
+      <div class="bsi-tiles">
+        <span class="bsi-tile"></span><span class="bsi-tile"></span>
+        <span class="bsi-tile"></span><span class="bsi-tile"></span>
+      </div>
+      <div class="bsi-orbit-pos"><div class="bsi-orbit"><span class="bsi-node"></span></div></div>
+      <div class="bsi-plant">🌿</div>
+    </div>
+
+    <div class="wordmark">
+      <h1>BioSpatial <span class="ai">Intelligence</span></h1>
+      <p>Where ML Meets Living Architecture</p>
+    </div>
+  </div>
+</body>
+</html>

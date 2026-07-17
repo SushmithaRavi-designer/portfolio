@@ -1,0 +1,2147 @@
+{
+  "bab-al-luq": [
+    {
+      "src": "assets/web/bab-al-luq/bab-al-luq-cover.jpg",
+      "w": 1500,
+      "h": 1240,
+      "cover": true,
+      "type": "render",
+      "coverVideo": "assets/web/bab-al-luq/bab-al-luq-cover.mp4"
+    }
+  ],
+  "biospatial": [
+    {
+      "src": "assets/web/biospatial/biospatial-cover.jpg",
+      "w": 1500,
+      "h": 937,
+      "cover": true,
+      "type": "render",
+      "coverVideo": "assets/web/biospatial/biospatial-cover.mp4"
+    }
+  ],
+  "environmental": [
+    {
+      "src": "assets/web/environmental/cover-teen-darwaza.jpg",
+      "w": 1600,
+      "h": 1066,
+      "cover": true,
+      "post": false,
+      "slide": 1
+    },
+    {
+      "src": "assets/web/environmental/site-location.jpg",
+      "w": 1600,
+      "h": 1062,
+      "cover": false,
+      "post": true,
+      "slide": 3
+    },
+    {
+      "src": "assets/web/environmental/ref-vernacular-1.jpg",
+      "w": 568,
+      "h": 568,
+      "cover": false,
+      "post": true,
+      "slide": 4
+    },
+    {
+      "src": "assets/web/environmental/ref-vernacular-2.jpg",
+      "w": 506,
+      "h": 506,
+      "cover": false,
+      "post": true,
+      "slide": 4
+    },
+    {
+      "src": "assets/web/environmental/ref-vernacular-3.jpg",
+      "w": 1600,
+      "h": 1599,
+      "cover": false,
+      "post": true,
+      "slide": 4
+    },
+    {
+      "src": "assets/web/environmental/site-aerial.jpg",
+      "w": 1600,
+      "h": 1105,
+      "cover": false,
+      "post": true,
+      "slide": 5
+    },
+    {
+      "src": "assets/web/environmental/site-plan.jpg",
+      "w": 1600,
+      "h": 1105,
+      "cover": false,
+      "post": true,
+      "slide": 5
+    },
+    {
+      "src": "assets/web/environmental/program-blocks.jpg",
+      "w": 1600,
+      "h": 1034,
+      "cover": false,
+      "post": true,
+      "slide": 8
+    },
+    {
+      "src": "assets/web/environmental/approach.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 9
+    },
+    {
+      "src": "assets/web/environmental/proximity-data.jpg",
+      "w": 1600,
+      "h": 679,
+      "cover": false,
+      "post": true,
+      "slide": 10
+    },
+    {
+      "src": "assets/web/environmental/clim-drybulb.jpg",
+      "w": 1494,
+      "h": 796,
+      "cover": false,
+      "post": true,
+      "slide": 11
+    },
+    {
+      "src": "assets/web/environmental/clim-radiation.jpg",
+      "w": 1500,
+      "h": 494,
+      "cover": false,
+      "post": true,
+      "slide": 12
+    },
+    {
+      "src": "assets/web/environmental/clim-utci-monthly.jpg",
+      "w": 1496,
+      "h": 656,
+      "cover": false,
+      "post": true,
+      "slide": 13
+    },
+    {
+      "src": "assets/web/environmental/clim-utci-hourly.jpg",
+      "w": 1464,
+      "h": 504,
+      "cover": false,
+      "post": true,
+      "slide": 13
+    },
+    {
+      "src": "assets/web/environmental/clim-diurnal-1.jpg",
+      "w": 1583,
+      "h": 514,
+      "cover": false,
+      "post": true,
+      "slide": 14
+    },
+    {
+      "src": "assets/web/environmental/clim-diurnal-2.jpg",
+      "w": 1578,
+      "h": 530,
+      "cover": false,
+      "post": true,
+      "slide": 14
+    },
+    {
+      "src": "assets/web/environmental/clim-windroses.jpg",
+      "w": 1600,
+      "h": 1131,
+      "cover": false,
+      "post": true,
+      "slide": 15
+    },
+    {
+      "src": "assets/web/environmental/clim-wind-heatmap.jpg",
+      "w": 1574,
+      "h": 818,
+      "cover": false,
+      "post": true,
+      "slide": 15
+    },
+    {
+      "src": "assets/web/environmental/clim-psychro-annual.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 16
+    },
+    {
+      "src": "assets/web/environmental/clim-psychro-summer.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 17
+    },
+    {
+      "src": "assets/web/environmental/clim-utci-psychro.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 18
+    },
+    {
+      "src": "assets/web/environmental/clim-psychro-wind.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 19
+    },
+    {
+      "src": "assets/web/environmental/design-stage1.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 21
+    },
+    {
+      "src": "assets/web/environmental/design-stage2.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 21
+    },
+    {
+      "src": "assets/web/environmental/d2-radiation.jpg",
+      "w": 1600,
+      "h": 998,
+      "cover": false,
+      "post": true,
+      "slide": 23
+    },
+    {
+      "src": "assets/web/environmental/d2-daylight-1.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 24
+    },
+    {
+      "src": "assets/web/environmental/d2-daylight-2.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 24
+    },
+    {
+      "src": "assets/web/environmental/d2-windspeed-1.jpg",
+      "w": 1229,
+      "h": 1234,
+      "cover": false,
+      "post": true,
+      "slide": 25
+    },
+    {
+      "src": "assets/web/environmental/d2-windspeed-2.jpg",
+      "w": 1230,
+      "h": 1235,
+      "cover": false,
+      "post": true,
+      "slide": 25
+    },
+    {
+      "src": "assets/web/environmental/d2-seasonal.jpg",
+      "w": 1600,
+      "h": 635,
+      "cover": false,
+      "post": true,
+      "slide": 26
+    },
+    {
+      "src": "assets/web/environmental/d1-kpi.jpg",
+      "w": 1045,
+      "h": 1042,
+      "cover": false,
+      "post": true,
+      "slide": 27
+    },
+    {
+      "src": "assets/web/environmental/d3-ventilated-1.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 29
+    },
+    {
+      "src": "assets/web/environmental/d3-ventilated-2.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 29
+    },
+    {
+      "src": "assets/web/environmental/d4-radiation.jpg",
+      "w": 1600,
+      "h": 998,
+      "cover": false,
+      "post": true,
+      "slide": 31
+    },
+    {
+      "src": "assets/web/environmental/d4-optim-phase1.gif",
+      "w": 2048,
+      "h": 1152,
+      "cover": false,
+      "post": true,
+      "slide": 33,
+      "animated": true
+    },
+    {
+      "src": "assets/web/environmental/d4-phase1-result.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 34
+    },
+    {
+      "src": "assets/web/environmental/d4-optim-phase2.gif",
+      "w": 2048,
+      "h": 1152,
+      "cover": false,
+      "post": true,
+      "slide": 35,
+      "animated": true
+    },
+    {
+      "src": "assets/web/environmental/d4-phase2-result.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 36
+    },
+    {
+      "src": "assets/web/environmental/d4-daylight-1.jpg",
+      "w": 1287,
+      "h": 1036,
+      "cover": false,
+      "post": true,
+      "slide": 37
+    },
+    {
+      "src": "assets/web/environmental/d4-daylight-2.jpg",
+      "w": 1565,
+      "h": 1226,
+      "cover": false,
+      "post": true,
+      "slide": 37
+    },
+    {
+      "src": "assets/web/environmental/d4-block-daylight.jpg",
+      "w": 1522,
+      "h": 1075,
+      "cover": false,
+      "post": true,
+      "slide": 38
+    },
+    {
+      "src": "assets/web/environmental/d4-block-plan.jpg",
+      "w": 1523,
+      "h": 1264,
+      "cover": false,
+      "post": true,
+      "slide": 38
+    },
+    {
+      "src": "assets/web/environmental/d4-utci.jpg",
+      "w": 1000,
+      "h": 850,
+      "cover": false,
+      "post": true,
+      "slide": 39
+    },
+    {
+      "src": "assets/web/environmental/result-landscape-1.jpg",
+      "w": 1600,
+      "h": 670,
+      "cover": false,
+      "post": true,
+      "slide": 40
+    },
+    {
+      "src": "assets/web/environmental/result-landscape-2.jpg",
+      "w": 1600,
+      "h": 697,
+      "cover": false,
+      "post": true,
+      "slide": 40
+    }
+  ],
+  "harbin-code": [
+    {
+      "src": "assets/web/harbin-code/cover-snow-tower.jpg",
+      "w": 1536,
+      "h": 1024,
+      "cover": true,
+      "post": false,
+      "slide": 1
+    },
+    {
+      "src": "assets/web/harbin-code/recipe-unit-logic.jpg",
+      "w": 360,
+      "h": 360,
+      "cover": false,
+      "post": true,
+      "slide": 2
+    },
+    {
+      "src": "assets/web/harbin-code/recipe-wfc-tiles.jpg",
+      "w": 880,
+      "h": 160,
+      "cover": false,
+      "post": true,
+      "slide": 2
+    },
+    {
+      "src": "assets/web/harbin-code/climate-temp.jpg",
+      "w": 1600,
+      "h": 815,
+      "cover": false,
+      "post": true,
+      "slide": 2
+    },
+    {
+      "src": "assets/web/harbin-code/climate-windrose.jpg",
+      "w": 1341,
+      "h": 1568,
+      "cover": false,
+      "post": true,
+      "slide": 2
+    },
+    {
+      "src": "assets/web/harbin-code/strategy-cores.jpg",
+      "w": 1600,
+      "h": 669,
+      "cover": false,
+      "post": true,
+      "slide": 3
+    },
+    {
+      "src": "assets/web/harbin-code/strategy-podium.jpg",
+      "w": 1600,
+      "h": 669,
+      "cover": false,
+      "post": true,
+      "slide": 3
+    },
+    {
+      "src": "assets/web/harbin-code/strategy-aggregation.jpg",
+      "w": 1600,
+      "h": 669,
+      "cover": false,
+      "post": true,
+      "slide": 3
+    },
+    {
+      "src": "assets/web/harbin-code/topological-map.jpg",
+      "w": 1600,
+      "h": 1130,
+      "cover": false,
+      "post": true,
+      "slide": 4
+    },
+    {
+      "src": "assets/web/harbin-code/module-3bed.jpg",
+      "w": 1179,
+      "h": 939,
+      "cover": false,
+      "post": true,
+      "slide": 5
+    },
+    {
+      "src": "assets/web/harbin-code/module-2bed.jpg",
+      "w": 1320,
+      "h": 1464,
+      "cover": false,
+      "post": true,
+      "slide": 5
+    },
+    {
+      "src": "assets/web/harbin-code/module-4bed.jpg",
+      "w": 1398,
+      "h": 939,
+      "cover": false,
+      "post": true,
+      "slide": 5
+    },
+    {
+      "src": "assets/web/harbin-code/courtyard-section-1.jpg",
+      "w": 1600,
+      "h": 891,
+      "cover": false,
+      "post": true,
+      "slide": 6
+    },
+    {
+      "src": "assets/web/harbin-code/courtyard-section-2.jpg",
+      "w": 1600,
+      "h": 891,
+      "cover": false,
+      "post": true,
+      "slide": 6
+    },
+    {
+      "src": "assets/web/harbin-code/wfc-1-site-grid.jpg",
+      "w": 1600,
+      "h": 866,
+      "cover": false,
+      "post": true,
+      "slide": 8
+    },
+    {
+      "src": "assets/web/harbin-code/wfc-2-building-line.jpg",
+      "w": 1600,
+      "h": 866,
+      "cover": false,
+      "post": true,
+      "slide": 8
+    },
+    {
+      "src": "assets/web/harbin-code/wfc-3-grid-points.jpg",
+      "w": 1600,
+      "h": 866,
+      "cover": false,
+      "post": true,
+      "slide": 8
+    },
+    {
+      "src": "assets/web/harbin-code/wfc-4-z-translate.jpg",
+      "w": 1600,
+      "h": 866,
+      "cover": false,
+      "post": true,
+      "slide": 8
+    },
+    {
+      "src": "assets/web/harbin-code/wfc-5-slots.jpg",
+      "w": 1600,
+      "h": 866,
+      "cover": false,
+      "post": true,
+      "slide": 8
+    },
+    {
+      "src": "assets/web/harbin-code/wfc-6-solving.jpg",
+      "w": 1600,
+      "h": 866,
+      "cover": false,
+      "post": true,
+      "slide": 8
+    },
+    {
+      "src": "assets/web/harbin-code/wfc-7-final-model.jpg",
+      "w": 1390,
+      "h": 1558,
+      "cover": false,
+      "post": true,
+      "slide": 8
+    },
+    {
+      "src": "assets/web/harbin-code/render-3d-data.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 9
+    },
+    {
+      "src": "assets/web/harbin-code/structure-massing.jpg",
+      "w": 1600,
+      "h": 669,
+      "cover": false,
+      "post": true,
+      "slide": 10
+    },
+    {
+      "src": "assets/web/harbin-code/structure-module.jpg",
+      "w": 1600,
+      "h": 910,
+      "cover": false,
+      "post": true,
+      "slide": 10
+    },
+    {
+      "src": "assets/web/harbin-code/env-strategies-slide.jpg",
+      "w": 1509,
+      "h": 774,
+      "cover": false,
+      "post": true,
+      "slide": 11
+    },
+    {
+      "src": "assets/web/harbin-code/plan-5th.jpg",
+      "w": 1600,
+      "h": 866,
+      "cover": false,
+      "post": true,
+      "slide": 12
+    },
+    {
+      "src": "assets/web/harbin-code/plan-15th.jpg",
+      "w": 1600,
+      "h": 866,
+      "cover": false,
+      "post": true,
+      "slide": 12
+    },
+    {
+      "src": "assets/web/harbin-code/plan-highlod.jpg",
+      "w": 1600,
+      "h": 1717,
+      "cover": false,
+      "post": true,
+      "slide": 13
+    },
+    {
+      "src": "assets/web/harbin-code/elevation-1.jpg",
+      "w": 1600,
+      "h": 998,
+      "cover": false,
+      "post": true,
+      "slide": 14
+    },
+    {
+      "src": "assets/web/harbin-code/elevation-2.jpg",
+      "w": 1600,
+      "h": 998,
+      "cover": false,
+      "post": true,
+      "slide": 14
+    },
+    {
+      "src": "assets/web/harbin-code/var-onesite-1.gif",
+      "w": 753,
+      "h": 740,
+      "cover": false,
+      "post": true,
+      "slide": 15,
+      "animated": true
+    },
+    {
+      "src": "assets/web/harbin-code/var-onesite-2.gif",
+      "w": 1134,
+      "h": 758,
+      "cover": false,
+      "post": true,
+      "slide": 15,
+      "animated": true
+    },
+    {
+      "src": "assets/web/harbin-code/var-site-1.gif",
+      "w": 648,
+      "h": 531,
+      "cover": false,
+      "post": true,
+      "slide": 16,
+      "animated": true
+    },
+    {
+      "src": "assets/web/harbin-code/var-site-2.gif",
+      "w": 1309,
+      "h": 798,
+      "cover": false,
+      "post": true,
+      "slide": 16,
+      "animated": true
+    },
+    {
+      "src": "assets/web/harbin-code/var-site-3.gif",
+      "w": 922,
+      "h": 694,
+      "cover": false,
+      "post": true,
+      "slide": 16,
+      "animated": true
+    },
+    {
+      "src": "assets/web/harbin-code/var-site-4.gif",
+      "w": 848,
+      "h": 687,
+      "cover": false,
+      "post": true,
+      "slide": 16,
+      "animated": true
+    },
+    {
+      "src": "assets/web/harbin-code/var-site-5.gif",
+      "w": 928,
+      "h": 843,
+      "cover": false,
+      "post": true,
+      "slide": 16,
+      "animated": true
+    },
+    {
+      "src": "assets/web/harbin-code/var-site-6.gif",
+      "w": 1100,
+      "h": 749,
+      "cover": false,
+      "post": true,
+      "slide": 16,
+      "animated": true
+    },
+    {
+      "src": "assets/web/harbin-code/var-site-7.gif",
+      "w": 1134,
+      "h": 758,
+      "cover": false,
+      "post": true,
+      "slide": 16,
+      "animated": true
+    },
+    {
+      "src": "assets/web/harbin-code/render-lumion.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 17
+    },
+    {
+      "src": "assets/web/harbin-code/render-ai-1.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 18
+    },
+    {
+      "src": "assets/web/harbin-code/render-ai-2.jpg",
+      "w": 1600,
+      "h": 900,
+      "cover": false,
+      "post": true,
+      "slide": 19
+    }
+  ],
+  "hyperbuilding": [
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-cover.jpg",
+      "w": 1500,
+      "h": 823,
+      "cover": true,
+      "type": "render",
+      "slide": 23
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-01.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 24
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-02.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 25
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-03.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 26
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-04.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 27
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-05.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 28
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-06.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 29
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-07.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 30
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-08.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 31
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-09.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 32
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-10.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 33
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-11.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 34
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-12.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 35
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-13.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 36
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-14.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 47
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-15.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 49
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-16.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 50
+    },
+    {
+      "src": "assets/web/hyperbuilding/hyperbuilding-17.jpg",
+      "w": 1700,
+      "h": 933,
+      "cover": false,
+      "post": true,
+      "slide": 14
+    }
+  ],
+  "interlace-graphml": [
+    {
+      "src": "assets/web/graph-ml/graph-ml-cover.jpg",
+      "w": 1200,
+      "h": 1297,
+      "cover": true,
+      "type": "render",
+      "coverVideo": "assets/web/graph-ml/graph-ml-cover.mp4"
+    }
+  ],
+  "sine-tide": [
+    {
+      "src": "assets/web/structure/structure-cover.jpg",
+      "w": 1000,
+      "h": 1050,
+      "cover": true,
+      "type": "render",
+      "coverVideo": "assets/web/structure/structure-cover.mp4"
+    }
+  ],
+  "terrapilot": [
+    {
+      "src": "assets/web/terrapilot/terrapilot-cover.jpg",
+      "w": 1500,
+      "h": 1123,
+      "cover": true,
+      "type": "render"
+    }
+  ],
+  "agritecture": [
+    {
+      "src": "assets/web/agritecture/agritecture-cover.jpg",
+      "w": 1400,
+      "h": 470,
+      "cover": true,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-01.jpg",
+      "w": 1700,
+      "h": 864,
+      "cover": false,
+      "type": "plan"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-02.jpg",
+      "w": 1700,
+      "h": 895,
+      "cover": false,
+      "type": "plan"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-03.jpg",
+      "w": 1700,
+      "h": 878,
+      "cover": false,
+      "type": "plan"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-04.jpg",
+      "w": 1700,
+      "h": 884,
+      "cover": false,
+      "type": "plan"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-05.jpg",
+      "w": 1700,
+      "h": 874,
+      "cover": false,
+      "type": "plan"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-06.jpg",
+      "w": 1700,
+      "h": 852,
+      "cover": false,
+      "type": "plan"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-07.jpg",
+      "w": 1700,
+      "h": 330,
+      "cover": false,
+      "type": "section"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-08.jpg",
+      "w": 1700,
+      "h": 311,
+      "cover": false,
+      "type": "section"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-09.jpg",
+      "w": 1700,
+      "h": 327,
+      "cover": false,
+      "type": "section"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-10.jpg",
+      "w": 1700,
+      "h": 258,
+      "cover": false,
+      "type": "section"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-11.jpg",
+      "w": 1700,
+      "h": 335,
+      "cover": false,
+      "type": "section"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-12.jpg",
+      "w": 1700,
+      "h": 1002,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-13.jpg",
+      "w": 1700,
+      "h": 1014,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-14.jpg",
+      "w": 1700,
+      "h": 1136,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-15.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-16.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-17.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-18.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-19.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-20.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-21.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-22.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-23.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-24.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-25.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-26.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/agritecture/agritecture-27.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    }
+  ],
+  "ayurvedic-resort": [
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-cover.jpg",
+      "w": 1400,
+      "h": 783,
+      "cover": true,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-01.jpg",
+      "w": 1268,
+      "h": 1678,
+      "cover": false,
+      "type": "plan",
+      "group": "Site Plan"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-02.jpg",
+      "w": 674,
+      "h": 688,
+      "cover": false,
+      "type": "plan",
+      "group": "Site Plan"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-03.jpg",
+      "w": 1700,
+      "h": 1775,
+      "cover": false,
+      "type": "plan",
+      "group": "Admin Block"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-04.jpg",
+      "w": 1700,
+      "h": 1674,
+      "cover": false,
+      "type": "plan",
+      "group": "Admin Block"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-05.jpg",
+      "w": 1700,
+      "h": 1734,
+      "cover": false,
+      "type": "plan",
+      "group": "Admin Block"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-06.jpg",
+      "w": 1700,
+      "h": 901,
+      "cover": false,
+      "type": "plan",
+      "group": "Meditation Block"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-07.jpg",
+      "w": 1700,
+      "h": 838,
+      "cover": false,
+      "type": "plan",
+      "group": "Meditation Block"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-08.jpg",
+      "w": 1700,
+      "h": 2386,
+      "cover": false,
+      "type": "plan",
+      "group": "Treatment Block"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-09.jpg",
+      "w": 1700,
+      "h": 2790,
+      "cover": false,
+      "type": "plan",
+      "group": "Treatment Block"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-10.jpg",
+      "w": 1700,
+      "h": 2210,
+      "cover": false,
+      "type": "plan",
+      "group": "Treatment Block"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-11.jpg",
+      "w": 1700,
+      "h": 2511,
+      "cover": false,
+      "type": "plan",
+      "group": "Treatment Block"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-12.jpg",
+      "w": 1700,
+      "h": 2067,
+      "cover": false,
+      "type": "plan",
+      "group": "Cottage"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-13.jpg",
+      "w": 1700,
+      "h": 1836,
+      "cover": false,
+      "type": "plan",
+      "group": "Cottage"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-14.jpg",
+      "w": 1700,
+      "h": 1808,
+      "cover": false,
+      "type": "plan",
+      "group": "Cottage"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-15.jpg",
+      "w": 1700,
+      "h": 1798,
+      "cover": false,
+      "type": "plan",
+      "group": "Cottage"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-16.jpg",
+      "w": 1700,
+      "h": 3216,
+      "cover": false,
+      "type": "plan",
+      "group": "Deluxe Cottage Sharing"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-17.jpg",
+      "w": 1700,
+      "h": 2973,
+      "cover": false,
+      "type": "plan",
+      "group": "Deluxe Cottage Sharing"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-18.jpg",
+      "w": 1700,
+      "h": 1006,
+      "cover": false,
+      "type": "plan",
+      "group": "Deluxe Cottage Sharing"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-19.jpg",
+      "w": 1700,
+      "h": 631,
+      "cover": false,
+      "type": "plan",
+      "group": "Deluxe Room"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-20.jpg",
+      "w": 1700,
+      "h": 627,
+      "cover": false,
+      "type": "plan",
+      "group": "Deluxe Room"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-21.jpg",
+      "w": 1700,
+      "h": 890,
+      "cover": false,
+      "type": "plan",
+      "group": "Deluxe Room"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-22.jpg",
+      "w": 1700,
+      "h": 951,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-23.jpg",
+      "w": 1700,
+      "h": 945,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-24.jpg",
+      "w": 1700,
+      "h": 904,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-25.jpg",
+      "w": 1700,
+      "h": 944,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-26.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-27.jpg",
+      "w": 1700,
+      "h": 950,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-28.jpg",
+      "w": 1700,
+      "h": 944,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-29.jpg",
+      "w": 1700,
+      "h": 962,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/ayurvedic-resort/ayurvedic-resort-30.jpg",
+      "w": 1700,
+      "h": 944,
+      "cover": false,
+      "type": "render"
+    }
+  ],
+  "hotelier-institute": [
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-cover.jpg",
+      "w": 1400,
+      "h": 643,
+      "cover": true,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-01.jpg",
+      "w": 1700,
+      "h": 1489,
+      "cover": false,
+      "type": "plan",
+      "group": "Academic Block",
+      "caption": "Ground Floor"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-02.jpg",
+      "w": 1700,
+      "h": 1407,
+      "cover": false,
+      "type": "plan",
+      "group": "Academic Block",
+      "caption": "First Floor"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-03.jpg",
+      "w": 1700,
+      "h": 1611,
+      "cover": false,
+      "type": "plan",
+      "group": "Academic Block",
+      "caption": "Second Floor"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-04.jpg",
+      "w": 1700,
+      "h": 1114,
+      "cover": false,
+      "type": "plan",
+      "group": "Academic Block",
+      "caption": "Third Floor"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-05.jpg",
+      "w": 1700,
+      "h": 1160,
+      "cover": false,
+      "type": "plan",
+      "group": "Academic Block",
+      "caption": "Fourth Floor"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-06.jpg",
+      "w": 1700,
+      "h": 1597,
+      "cover": false,
+      "type": "plan",
+      "group": "Hostel Block",
+      "caption": "Ground Floor"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-07.jpg",
+      "w": 1700,
+      "h": 1567,
+      "cover": false,
+      "type": "plan",
+      "group": "Hostel Block",
+      "caption": "Even Floor"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-08.jpg",
+      "w": 1700,
+      "h": 1648,
+      "cover": false,
+      "type": "plan",
+      "group": "Hostel Block",
+      "caption": "Odd Floor"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-09.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-10.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-11.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-12.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-13.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-14.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-15.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-16.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/hotelier-institute/hotelier-institute-17.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    }
+  ],
+  "ikea": [
+    {
+      "src": "assets/web/ikea/ikea-cover.jpg",
+      "w": 1400,
+      "h": 990,
+      "cover": true
+    },
+    {
+      "src": "assets/web/ikea/ikea-01.jpg",
+      "w": 2000,
+      "h": 1414,
+      "cover": false
+    },
+    {
+      "src": "assets/web/ikea/ikea-02.jpg",
+      "w": 2000,
+      "h": 1414,
+      "cover": false
+    }
+  ],
+  "shopping-complex": [
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-cover.jpg",
+      "w": 1330,
+      "h": 625,
+      "cover": true,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-01.jpg",
+      "w": 1700,
+      "h": 1836,
+      "cover": false,
+      "type": "plan",
+      "group": "Site"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-02.jpg",
+      "w": 1298,
+      "h": 1068,
+      "cover": false,
+      "type": "plan",
+      "group": "Site"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-03.jpg",
+      "w": 1054,
+      "h": 1036,
+      "cover": false,
+      "type": "plan",
+      "group": "Site"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-04.jpg",
+      "w": 1700,
+      "h": 1611,
+      "cover": false,
+      "type": "plan",
+      "group": "Floor Plans"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-05.jpg",
+      "w": 1700,
+      "h": 1986,
+      "cover": false,
+      "type": "plan",
+      "group": "Floor Plans"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-06.jpg",
+      "w": 1700,
+      "h": 2274,
+      "cover": false,
+      "type": "plan",
+      "group": "Floor Plans"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-07.jpg",
+      "w": 1700,
+      "h": 2113,
+      "cover": false,
+      "type": "plan",
+      "group": "Floor Plans"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-08.jpg",
+      "w": 1700,
+      "h": 2127,
+      "cover": false,
+      "type": "plan",
+      "group": "Floor Plans"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-09.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-10.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-11.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-12.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-13.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-14.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-15.jpg",
+      "w": 1700,
+      "h": 956,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/shopping-complex/shopping-complex-16.jpg",
+      "w": 1700,
+      "h": 944,
+      "cover": false,
+      "type": "render"
+    }
+  ],
+  "pre-school": [
+    {
+      "src": "assets/web/pre-school/pre-school-cover.jpg",
+      "w": 1400,
+      "h": 1027,
+      "cover": true,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/pre-school/pre-school-01.jpg",
+      "w": 1700,
+      "h": 1579,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/pre-school/pre-school-02.jpg",
+      "w": 1700,
+      "h": 1565,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/pre-school/pre-school-03.jpg",
+      "w": 1700,
+      "h": 1570,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/pre-school/pre-school-04.jpg",
+      "w": 1700,
+      "h": 1241,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/pre-school/pre-school-05.jpg",
+      "w": 1700,
+      "h": 1178,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/pre-school/pre-school-06.jpg",
+      "w": 1700,
+      "h": 1177,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/pre-school/pre-school-07.jpg",
+      "w": 1700,
+      "h": 1291,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/pre-school/pre-school-08.jpg",
+      "w": 1700,
+      "h": 1528,
+      "cover": false,
+      "type": "render"
+    }
+  ],
+  "residential-pro": [
+    {
+      "src": "assets/web/residential-pro/residential-pro-cover.jpg",
+      "w": 1279,
+      "h": 1600,
+      "cover": true,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/residential-pro/residential-pro-01.jpg",
+      "w": 1700,
+      "h": 1093,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/residential-pro/residential-pro-02.jpg",
+      "w": 1700,
+      "h": 1074,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/residential-pro/residential-pro-03.jpg",
+      "w": 1700,
+      "h": 1137,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/residential-pro/residential-pro-04.jpg",
+      "w": 1700,
+      "h": 1159,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/residential-pro/residential-pro-05.jpg",
+      "w": 1526,
+      "h": 1886,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/residential-pro/residential-pro-06.jpg",
+      "w": 1700,
+      "h": 1857,
+      "cover": false,
+      "type": "render"
+    }
+  ],
+  "commercial-pro": [
+    {
+      "src": "assets/web/commercial-pro/commercial-pro-cover.jpg",
+      "w": 1400,
+      "h": 950,
+      "cover": true,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/commercial-pro/commercial-pro-01.jpg",
+      "w": 1700,
+      "h": 1569,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/commercial-pro/commercial-pro-02.jpg",
+      "w": 1700,
+      "h": 1443,
+      "cover": false,
+      "type": "render"
+    }
+  ],
+  "interior-design": [
+    {
+      "src": "assets/web/interior-design/interior-design-cover.jpg",
+      "w": 1400,
+      "h": 753,
+      "cover": true,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/interior-design/interior-design-01.jpg",
+      "w": 1700,
+      "h": 1028,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/interior-design/interior-design-02.jpg",
+      "w": 1700,
+      "h": 1072,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/interior-design/interior-design-03.jpg",
+      "w": 1700,
+      "h": 1107,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/interior-design/interior-design-04.jpg",
+      "w": 1700,
+      "h": 1571,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/interior-design/interior-design-05.jpg",
+      "w": 1700,
+      "h": 1567,
+      "cover": false,
+      "type": "render"
+    }
+  ],
+  "facade-pro": [
+    {
+      "src": "assets/web/facade-pro/facade-pro-cover.jpg",
+      "w": 1344,
+      "h": 1204,
+      "cover": true,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-01.jpg",
+      "w": 1634,
+      "h": 1190,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-02.jpg",
+      "w": 1700,
+      "h": 1237,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-03.jpg",
+      "w": 1700,
+      "h": 1140,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-04.jpg",
+      "w": 1380,
+      "h": 1094,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-05.jpg",
+      "w": 1600,
+      "h": 1132,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-06.jpg",
+      "w": 1214,
+      "h": 776,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-07.jpg",
+      "w": 1226,
+      "h": 774,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-08.jpg",
+      "w": 1218,
+      "h": 778,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-09.jpg",
+      "w": 1224,
+      "h": 778,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-10.jpg",
+      "w": 1226,
+      "h": 786,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-11.jpg",
+      "w": 1332,
+      "h": 788,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-12.jpg",
+      "w": 1326,
+      "h": 788,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-13.jpg",
+      "w": 1336,
+      "h": 788,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-14.jpg",
+      "w": 1328,
+      "h": 1188,
+      "cover": false,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/facade-pro/facade-pro-15.jpg",
+      "w": 1344,
+      "h": 1204,
+      "cover": false,
+      "type": "render"
+    }
+  ],
+  "mutaverse": [
+    {
+      "src": "assets/web/mutaverse/mutaverse-cover.jpg",
+      "w": 1200,
+      "h": 850,
+      "cover": true,
+      "coverVideo": "assets/web/mutaverse/mutaverse-cover.mp4"
+    }
+  ],
+  "facadegen": [
+    {
+      "src": "assets/web/facadegen/facadegen-cover.jpg",
+      "w": 1400,
+      "h": 741,
+      "cover": true,
+      "type": "render"
+    }
+  ],
+  "freelance-residence": [
+    {
+      "src": "assets/web/freelance-residence/freelance-residence-cover.jpg",
+      "w": 1500,
+      "h": 999,
+      "cover": true,
+      "type": "render"
+    },
+    {
+      "src": "assets/web/freelance-residence/render-02.jpg",
+      "w": 2000,
+      "h": 1332,
+      "cover": false,
+      "type": "render",
+      "group": "Visualisation"
+    },
+    {
+      "src": "assets/web/freelance-residence/render-03.jpg",
+      "w": 2000,
+      "h": 1332,
+      "cover": false,
+      "type": "render",
+      "group": "Visualisation"
+    },
+    {
+      "src": "assets/web/freelance-residence/render-04.jpg",
+      "w": 2000,
+      "h": 1332,
+      "cover": false,
+      "type": "render",
+      "group": "Visualisation"
+    },
+    {
+      "src": "assets/web/freelance-residence/render-05.jpg",
+      "w": 2000,
+      "h": 1332,
+      "cover": false,
+      "type": "render",
+      "group": "Visualisation"
+    },
+    {
+      "src": "assets/web/freelance-residence/render-06.jpg",
+      "w": 2000,
+      "h": 1332,
+      "cover": false,
+      "type": "render",
+      "group": "Visualisation"
+    },
+    {
+      "src": "assets/web/freelance-residence/render-07.jpg",
+      "w": 2000,
+      "h": 1332,
+      "cover": false,
+      "type": "render",
+      "group": "Visualisation"
+    },
+    {
+      "src": "assets/web/freelance-residence/render-08.jpg",
+      "w": 2000,
+      "h": 1332,
+      "cover": false,
+      "type": "render",
+      "group": "Visualisation"
+    },
+    {
+      "src": "assets/web/freelance-residence/render-09.jpg",
+      "w": 2000,
+      "h": 1333,
+      "cover": false,
+      "type": "render",
+      "group": "Visualisation"
+    },
+    {
+      "src": "assets/web/freelance-residence/render-10.jpg",
+      "w": 2000,
+      "h": 1333,
+      "cover": false,
+      "type": "render",
+      "group": "Visualisation"
+    },
+    {
+      "src": "assets/web/freelance-residence/render-11.jpg",
+      "w": 2000,
+      "h": 1333,
+      "cover": false,
+      "type": "render",
+      "group": "Visualisation"
+    },
+    {
+      "src": "assets/web/freelance-residence/render-12.jpg",
+      "w": 2000,
+      "h": 1333,
+      "cover": false,
+      "type": "render",
+      "group": "Visualisation"
+    },
+    {
+      "src": "assets/web/freelance-residence/floorplan-01.jpg",
+      "w": 1490,
+      "h": 1394,
+      "cover": false,
+      "type": "plan",
+      "group": "Floor Plans"
+    },
+    {
+      "src": "assets/web/freelance-residence/floorplan-02.jpg",
+      "w": 1490,
+      "h": 1394,
+      "cover": false,
+      "type": "plan",
+      "group": "Floor Plans"
+    },
+    {
+      "src": "assets/web/freelance-residence/floorplan-03.jpg",
+      "w": 1483,
+      "h": 1380,
+      "cover": false,
+      "type": "plan",
+      "group": "Floor Plans"
+    },
+    {
+      "src": "assets/web/freelance-residence/floorplan-04.jpg",
+      "w": 1483,
+      "h": 1380,
+      "cover": false,
+      "type": "plan",
+      "group": "Floor Plans"
+    },
+    {
+      "src": "assets/web/freelance-residence/gf-plan-01.jpg",
+      "w": 1712,
+      "h": 2140,
+      "cover": false,
+      "type": "plan",
+      "group": "Floor Plans"
+    },
+    {
+      "src": "assets/web/freelance-residence/block-01.jpg",
+      "w": 1490,
+      "h": 1414,
+      "cover": false,
+      "type": "plan",
+      "group": "Block Drawings"
+    },
+    {
+      "src": "assets/web/freelance-residence/block-02.jpg",
+      "w": 1490,
+      "h": 1414,
+      "cover": false,
+      "type": "plan",
+      "group": "Block Drawings"
+    },
+    {
+      "src": "assets/web/freelance-residence/block-03.jpg",
+      "w": 1490,
+      "h": 1414,
+      "cover": false,
+      "type": "plan",
+      "group": "Block Drawings"
+    },
+    {
+      "src": "assets/web/freelance-residence/block-04.jpg",
+      "w": 1490,
+      "h": 1414,
+      "cover": false,
+      "type": "plan",
+      "group": "Block Drawings"
+    },
+    {
+      "src": "assets/web/freelance-residence/block-05.jpg",
+      "w": 1490,
+      "h": 1414,
+      "cover": false,
+      "type": "plan",
+      "group": "Block Drawings"
+    },
+    {
+      "src": "assets/web/freelance-residence/gf-block-01.jpg",
+      "w": 1490,
+      "h": 1414,
+      "cover": false,
+      "type": "plan",
+      "group": "Block Drawings"
+    },
+    {
+      "src": "assets/web/freelance-residence/gf-block-02.jpg",
+      "w": 1490,
+      "h": 1414,
+      "cover": false,
+      "type": "plan",
+      "group": "Block Drawings"
+    }
+  ]
+}
