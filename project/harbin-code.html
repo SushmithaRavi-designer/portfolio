@@ -394,6 +394,20 @@
   document.querySelectorAll('[data-next]').forEach(b=>b.addEventListener('click',()=>go(idOf(b.dataset.next))));
   document.querySelectorAll('[data-prev]').forEach(b=>b.addEventListener('click',()=>go(idOf(b.dataset.prev))));
   document.querySelectorAll('[data-dot]').forEach(d=>d.addEventListener('click',()=>go(+d.dataset.dot)));
+
+  // Hash → page. This is a flip-deck, not a scrolling document, so a plain
+  // `#contact` anchor does nothing on its own — the rail's Contact link (which
+  // points at index.html#contact from every section/project page) would just
+  // land on the hero. Map the hash to the page that CONTAINS that id.
+  function fromHash(){
+    const h=location.hash.slice(1);
+    if(!h)return;
+    const target=document.getElementById(h);
+    if(!target)return;
+    const page=target.closest('.page');
+    if(page)go(pages.indexOf(page));
+  }
+  window.addEventListener('hashchange',fromHash);
   // keyboard: arrows / page up-down
   document.addEventListener('keydown',e=>{
     if(document.querySelector('.lightbox:not([hidden])'))return;
@@ -422,7 +436,9 @@
     if(Math.abs(dy)>60)go(cur+(dy>0?1:-1));
     ty=null;
   },{passive:true});
+  // start on the hash's page if there is one (e.g. index.html#contact), else page 0
   go(0);
+  fromHash();
 })();
 
 /* ===== HERO GRAPH ===== */
