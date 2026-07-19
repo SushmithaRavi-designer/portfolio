@@ -756,7 +756,13 @@ body.paged .main{height:100svh;overflow:hidden;position:relative}
   .skills-col{grid-template-columns:1fr}
   body.paged .main{height:auto;overflow:visible}
   .page{position:relative;inset:auto;opacity:1;visibility:visible;transform:none;min-height:auto;padding-block:40px;border-bottom:1px solid var(--line)}
+  /* galaxy page has no flow content (all absolute), so on mobile it collapses to
+     zero height and the star-map disappears. Give it a real height so the canvas
+     measures correctly and the stars render — same experience as on laptop. */
+  .page-galaxy{min-height:80vh;padding:0!important}
+  .page-galaxy .galaxy{position:absolute;inset:0}
   .page-nav{position:static}
+  .page-galaxy .page-nav{position:absolute;bottom:3vh;left:var(--sp);right:var(--sp)}
   .dots{display:none}
 }
 @media (max-width:560px){
